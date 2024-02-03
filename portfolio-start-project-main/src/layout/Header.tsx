@@ -7,7 +7,7 @@ export function Header() {
         <img src={logo} alt="logo"></img>
       <StyledNav>
         
-        <StyledList>
+        <ul>
           <StyledLi>
             <StyledA href="">Home</StyledA>
           </StyledLi>
@@ -23,7 +23,7 @@ export function Header() {
           <StyledLi>
             <StyledA href="">Resume</StyledA>
           </StyledLi>
-        </StyledList>
+        </ul>
       </StyledNav>
     </StyledHeader>
   );
@@ -44,13 +44,7 @@ const StyledNav = styled.nav`
     align-items: center;
 `
 
-const StyledList = styled.ul`
-    display: flex;
-    justify-content: space-between;
-    list-style-type: none;
-    margin: 0 auto;
-    padding: 0;  
-`
+
 
 const StyledA = styled.a`
     text-decoration: none;

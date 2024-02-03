@@ -23,10 +23,8 @@ export function About() {
 }
 
 const StyledAbout = styled.section `
-  display: flex;
-  justify-content: space-around;
+ flex-direction: row;
   padding-top: 140px;
-  padding-bottom: 140px;
 `
 
 const StyledImg = styled.img `
