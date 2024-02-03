@@ -40,12 +40,6 @@ const StyledImg = styled.img`
   border-radius: 36px;
 `;
 const StyledButton = styled.button`
-  max-width: 214px;
-  height: 54px;
-  background-color: rgba(15, 191, 97, 1);
-  border: none;
-  border-radius: 20px;
-  padding: 12px 40px 12px 40px;
   color: rgba(255, 255, 255, 1);
   font-family: Roboto;
   font-size: 20px;

@@ -53,6 +53,7 @@ section {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
 }
 
 ul {
@@ -62,4 +63,13 @@ ul {
   
   margin: 0 auto;
   padding: 0;  
+}
+
+button {
+  max-width: 214px;
+  height: 54px;
+  background-color: rgba(15, 191, 97, 1);
+  border: none;
+  border-radius: 20px;
+  padding: 12px 40px 12px 40px;
 }
