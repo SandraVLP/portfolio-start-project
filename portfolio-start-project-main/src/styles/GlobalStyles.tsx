@@ -30,6 +30,7 @@ export const GlobalStyles = createGlobalStyle`
       }
 
       h2 {
+        margin-bottom: 75px;
   color:${myTheme.primary};
   font-family: Roboto;
 font-size: 40px;
