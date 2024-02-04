@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { myTheme } from "../../styles/Theme";
+import { StyledButton } from "../../components/Button";
 
 export function Contacts() {
   return (
@@ -21,7 +22,9 @@ export function Contacts() {
           Message
           <textarea placeholder="Message"></textarea>
         </StyledLabel>
-        <button type="submit">Submit</button>
+        <StyledButton width={"180px"} type="submit">
+          Submit
+        </StyledButton>
       </StyledForm>
     </section>
   );
@@ -38,9 +41,9 @@ const StyledForm = styled.form`
   background-color: ${myTheme.secondary};
 `;
 
-const StyledLabel = styled.label `
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    margin-bottom: 15px;
-`
+const StyledLabel = styled.label`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+`;

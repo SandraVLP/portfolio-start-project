@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import MainFoto from "../../../assets/images/foto-main.jpg";
 import { myTheme } from "../../../styles/Theme";
+import { StyledButton } from "../../../components/Button";
 
 export function Main() {
   return (
@@ -12,7 +13,7 @@ export function Main() {
           I’m a UX/UI designer and Front End Developer based in Kuala Lumpur,
           Malaysia! 🇲🇾. I love designing, coding, creating and building stuff.{" "}
         </p>
-        <StyledBtn>Send E-mail</StyledBtn>
+        <StyledButton width={"170px"}>Send E-mail</StyledButton>
       </StyledInfo>
       <StyledImg src={MainFoto} alt="Main Foto"></StyledImg>
     </StyledMain>
@@ -30,15 +31,6 @@ const StyledSpan = styled.span`
   color: ${myTheme.primary};
 `;
 
-const StyledBtn = styled.button`
-  width: 170px;
-  height: 54px;
-  padding: 12px 40px 12px 40px;
-  border-radius: 50px;
-  gap: 10px;
-  border: none;
-  background-color: ${myTheme.primary};
-`;
 
 const StyledImg = styled.img `
     max-width: 548px;

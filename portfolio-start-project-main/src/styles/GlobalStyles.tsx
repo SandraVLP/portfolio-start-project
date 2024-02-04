@@ -1,4 +1,5 @@
 import { createGlobalStyle } from "styled-components";
+import { myTheme } from "./Theme";
 
 export const GlobalStyles = createGlobalStyle`
     *,
@@ -24,12 +25,12 @@ export const GlobalStyles = createGlobalStyle`
       font-weight: 700;
       line-height: 70px;
       letter-spacing: 0em;
-      color: rgba(0, 0, 0, 1);
+      color: ${myTheme.black.dark};
       
       }
 
       h2 {
-  color:rgba(15, 191, 97, 1);
+  color:${myTheme.primary};
   font-family: Roboto;
 font-size: 40px;
 font-weight: 700;
@@ -40,7 +41,7 @@ text-align: center;
 }
 
 p {
-  color: rgba(73, 73, 73, 1);
+  color: ${myTheme.black.light};
   font-family: Roboto;
 font-size: 18px;
 font-weight: 400;
@@ -67,12 +68,7 @@ ul {
   padding: 0;  
 }
 
-button {
-  max-width: 214px;
-  height: 54px;
-  background-color: rgba(15, 191, 97, 1);
-  border: none;
-  border-radius: 20px;
-  padding: 12px 40px 12px 40px;
-}
+a {text-decoration: none;
+      color: ${myTheme.black.dark};}
+
 `;

@@ -4,6 +4,7 @@ import Puma from "../../assets/images/puma.png";
 import Sight from "../../assets/images/sight.jpeg";
 import Yoga from "../../assets/images/yoga.jpeg";
 import { myTheme } from "../../styles/Theme";
+import { StyledButton } from "../../components/Button";
 
 export function Portfolio() {
   return (
@@ -21,7 +22,7 @@ export function Portfolio() {
         <StyledImg src={Puma}></StyledImg>
         <StyledImg src={Yoga}></StyledImg>
       </StyledContainer>
-      <StyledButton>See more</StyledButton>
+      <StyledButton color={myTheme.white} width="214px">See more</StyledButton>
     </section>
   );
 }
@@ -40,13 +41,4 @@ const StyledImg = styled.img`
   border: solid 1px ${myTheme.grey};
   border-radius: 36px;
 `;
-const StyledButton = styled.button`
-  color: ${myTheme.white};
-  font-family: Roboto;
-  font-size: 20px;
-  font-weight: 500;
-  line-height: 30px;
-  letter-spacing: 0em;
-  text-align: center;
-  margin: 0 auto;
-`;
+

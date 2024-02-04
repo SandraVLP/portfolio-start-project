@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import logo from "../assets/images/Logo.svg";
 import { myTheme } from "../styles/Theme";
+import { StyledButton } from "../components/Button";
 
 export function Header() {
   return (
@@ -21,7 +22,7 @@ export function Header() {
             <a href="/work">My work</a>
           </li>
           <li>
-            <a href="/resume">Resume</a>
+            <StyledButton width="146px" as="a"  href="/resume">Resume</StyledButton>
           </li>
         </ul>
       </StyledNav>
@@ -39,26 +40,12 @@ const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  ul {
-    li > a {
-      
-      text-decoration: none;
-      color: ${myTheme.black.dark};
-      
-    }
-  }
+
 
   li {
     margin-right: 30px;
     &:first-child {
       color: ${myTheme.primary};
-    }
-    &:last-child {
-      background: ${myTheme.primary};
-      width: 146px;
-      text-align: center;
-      border-radius: 50px;
-      margin-right: 0;
     }
   }
 `;
