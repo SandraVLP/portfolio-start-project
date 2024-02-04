@@ -28,15 +28,13 @@ export function Portfolio() {
 }
 
 const StyledContainer = styled.div`
-  display: grid;
-  grid-template-columns: repeat(2, minmax(200px, 545px));
-  gap: 25px;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
   margin: 95px auto; 
 `;
 
 const StyledImg = styled.img`
-  width: 545px; //поправить
+  width: 50%; //поправить
   max-height: 350px;
   border: solid 1px ${myTheme.grey};
   border-radius: 36px;
