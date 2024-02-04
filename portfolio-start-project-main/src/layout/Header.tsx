@@ -48,5 +48,9 @@ const StyledNav = styled.nav`
       color: ${myTheme.primary};
     }
   }
+
+  a {
+    
+  }
 `;
 

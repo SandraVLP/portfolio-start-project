@@ -3,29 +3,31 @@ import Resp from "../../assets/images/resp.png";
 import Ux from "../../assets/images/ux.png";
 import Front from "../../assets/images/front.png";
 import styled from "styled-components";
-import { myTheme } from '../../styles/Theme';
+import { myTheme } from "../../styles/Theme";
 
 export function Services() {
   return (
     <section className="service">
       <h2>What I do</h2>
       <StyledList className="service-list">
-        <li>
+        <div>
           <img src={Ux} alt="UX"></img>
-          UX/UI Design{" "}
-        </li>
-        <li>
-          <img src={Front} alt="Front"></img>Front End Development{" "}
-        </li>
-        <li>
-          <img src={Resp} alt="Resp"></img>Responsive Design
-        </li>
+          <p> UX/UI Design</p>
+        </div>
+        <div>
+          <img src={Front} alt="Front"></img>
+          <p>Front End Development</p>
+        </div>
+        <div>
+          <img src={Resp} alt="Resp"></img>
+          <p>Responsive Design</p>
+        </div>
       </StyledList>
       <div className="service-about">
         <StyledDescription className="service-description">
-          <span>UX/ ui design</span>
+          <span>UX/UI design</span>
           <h3>Research, Design, Prototype, and Animation</h3>
-          <a>Learn more</a>
+          <a href="/ux">Learn more</a>
           <StyledImg src={Work1} alt="Ux design"></StyledImg>
         </StyledDescription>
         {/* <StyledDescription className="service-description">
@@ -39,7 +41,7 @@ export function Services() {
           <h3>Research, Design, Prototype, and Animation</h3>
           <a>Learn more</a>
           <StyledImg src={Work1} alt="Ux design"></StyledImg>
-        </StyledDescription> */} 
+        </StyledDescription> */}
         {/* ВСЕ ЛОМАЕТСЯ */}
       </div>
     </section>
@@ -63,6 +65,39 @@ const StyledImg = styled.img`
   border-radius: 20px;
 `;
 
-const StyledList = styled.ul `
-    margin-bottom: 120px;
-`
+const StyledList = styled.div`
+  margin-bottom: 120px;
+  display: flex;
+
+  div {
+    display: flex;
+    align-items: center;
+    max-width: 300px;
+    margin-right: 30px;
+   
+    img {
+      width: 120px;
+      border-radius: 20px;
+      background-color: rgba(45, 76, 255, 0.13);
+    }
+
+    &:first-child{
+
+      img{
+        background-color: rgba(15, 191, 97, 0.2);
+      }
+    }
+
+    &:last-child{
+      margin-right: 0;
+
+      img{
+        background-color: rgba(15, 191, 97, 0.05);
+      }
+    }
+  }
+
+  p {
+    margin-left: 30px;
+  }
+`;

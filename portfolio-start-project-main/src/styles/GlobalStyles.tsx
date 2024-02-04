@@ -69,6 +69,13 @@ ul {
   padding: 0;  
 }
 
+li {
+
+    &:first-child {
+      color: ${myTheme.primary};
+    }
+  }
+
 a {text-decoration: none;
       color: ${myTheme.black.dark};}
 

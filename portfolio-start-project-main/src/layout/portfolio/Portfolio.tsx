@@ -10,12 +10,12 @@ export function Portfolio() {
   return (
     <section className="Portfolio">
       <h2>My recent works</h2>
-      <ul>
+      <StyledList>
         <li>All</li>
         <li>UX/UI Design</li>
         <li>Web Design</li>
         <li>Front End Development</li>
-      </ul>
+      </StyledList>
       <StyledContainer className="portfolio-container">
         <StyledImg src={Fitness}></StyledImg>
         <StyledImg src={Sight}></StyledImg>
@@ -27,6 +27,12 @@ export function Portfolio() {
   );
 }
 
+const StyledList = styled.ul `
+  li {
+    margin-right: 40px;
+  }
+`
+
 const StyledContainer = styled.div`
   display: flex;
   flex-wrap: wrap;
@@ -34,7 +40,7 @@ const StyledContainer = styled.div`
 `;
 
 const StyledImg = styled.img`
-  width: 50%; //поправить
+  width: 50%;
   max-height: 350px;
   border: solid 1px ${myTheme.grey};
   border-radius: 36px;
