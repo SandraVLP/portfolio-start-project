@@ -41,6 +41,7 @@ const StyledNav = styled.nav`
   align-items: center;
   ul {
     li > a {
+      
       text-decoration: none;
       color: ${myTheme.black.dark};
       
