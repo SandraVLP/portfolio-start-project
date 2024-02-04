@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import logo from "../assets/images/Logo.svg";
+import { myTheme } from "../styles/Theme";
 
 export function Header() {
   return (
@@ -30,7 +31,7 @@ export function Header() {
 }
 
 const StyledHeader = styled.header`
-    background-color: rgba(15, 191, 97, 0.1);
+    background-color:${myTheme.secondary};
     display: flex;
     justify-content: space-around;
 
@@ -48,7 +49,7 @@ const StyledNav = styled.nav`
 
 const StyledA = styled.a`
     text-decoration: none;
-color: rgba(0, 0, 0, 1);
+color: ${myTheme.black.dark};
 
 `
 
@@ -57,7 +58,7 @@ margin-right: 30px;
 &:first-child {
 color:rgba(15, 191, 97, 1);}
 &:last-child {
-    background: rgba(15, 191, 97, 1);
+    background: ${myTheme.primary};
     width: 146px;
     text-align: center;
     border-radius: 50px;

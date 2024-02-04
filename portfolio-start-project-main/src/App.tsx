@@ -1,5 +1,5 @@
 import './App.css';
-import styled from 'styled-components';
+import styled, { ThemeProvider } from 'styled-components';
 import { Header } from './layout/Header';
 import { Main } from './layout/sections/main/Main';
 import { About } from './layout/sections/about/About';
@@ -8,12 +8,14 @@ import { Services } from './layout/services/Services';
 import { Portfolio } from './layout/portfolio/Portfolio';
 import { Contacts } from './layout/contacts/Contacts';
 import { Footer } from './layout/Footer';
+import { myTheme } from './styles/Theme';
 
 
 function App() {
     return (
         
         <div className="App">
+            <ThemeProvider theme={myTheme}>
             <Header />
             <Main />
             <About/>
@@ -22,14 +24,10 @@ function App() {
             <Portfolio/>
             <Contacts/>
             <Footer/>
+            </ThemeProvider>
         </div>
     );
 }
 
 export default App;
 
-const Title = styled.h1`
-    font-size: 1.5em;
-    text-align: center;
-    color: #e91e63;
-`;

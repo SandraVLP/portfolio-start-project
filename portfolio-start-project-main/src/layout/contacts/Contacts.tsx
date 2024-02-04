@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { myTheme } from "../../styles/Theme";
 
 export function Contacts() {
   return (
@@ -31,10 +32,10 @@ const StyledForm = styled.form`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 3px rgba(15, 191, 97, 1);
+  border: solid 3px ${myTheme.primary};
   border-radius: 20px;
   padding: 100px;
-  background-color: rgba(15, 191, 97, 0.1);
+  background-color: ${myTheme.secondary};
 `;
 
 const StyledLabel = styled.label `

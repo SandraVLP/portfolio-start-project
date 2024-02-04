@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import MainFoto from "../../../assets/images/foto-main.jpg";
+import { myTheme } from "../../../styles/Theme";
 
 export function Main() {
   return (
@@ -23,10 +24,10 @@ padding-top: 50px;
 padding-bottom: 90px;
   display: flex;
   justify-content: space-around;
-  background-color: rgba(15, 191, 97, 0.1);
+  background-color: ${myTheme.secondary}
 `;
 const StyledSpan = styled.span`
-  color: rgba(15, 191, 97, 1);
+  color: ${myTheme.primary};
 `;
 
 const StyledBtn = styled.button`
@@ -36,7 +37,7 @@ const StyledBtn = styled.button`
   border-radius: 50px;
   gap: 10px;
   border: none;
-  background-color: rgba(15, 191, 97, 1);
+  background-color: ${myTheme.primary};
 `;
 
 const StyledImg = styled.img `

@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { Icon } from "../components/Icon";
+import { myTheme } from "../styles/Theme";
 
 export function Footer() {
     return (
@@ -17,7 +18,7 @@ export function Footer() {
 }
 
 const StyledFooter = styled.footer `
-    background-color: rgba(15, 191, 97, 0.1);
+    background-color: ${myTheme.secondary};
     display: flex;
     justify-content: space-between;
 `
