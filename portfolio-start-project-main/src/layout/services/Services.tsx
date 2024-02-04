@@ -3,6 +3,7 @@ import Resp from "../../assets/images/resp.png";
 import Ux from "../../assets/images/ux.png";
 import Front from "../../assets/images/front.png";
 import styled from "styled-components";
+import { myTheme } from '../../styles/Theme';
 
 export function Services() {
   return (
@@ -46,7 +47,7 @@ export function Services() {
 }
 
 const StyledDescription = styled.div`
-  border: solid 1px rgba(196, 196, 196, 1);
+  border: solid 1px ${myTheme.grey};
   border-radius: 30px;
   position: relative;
   padding: 50px;

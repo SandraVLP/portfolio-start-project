@@ -3,6 +3,7 @@ import Fitness from "../../assets/images/fitness.png";
 import Puma from "../../assets/images/puma.png";
 import Sight from "../../assets/images/sight.jpeg";
 import Yoga from "../../assets/images/yoga.jpeg";
+import { myTheme } from "../../styles/Theme";
 
 export function Portfolio() {
   return (
@@ -36,11 +37,11 @@ const StyledContainer = styled.div`
 const StyledImg = styled.img`
   width: 545px; //поправить
   max-height: 350px;
-  border: solid 1px rgba(196, 196, 196, 1);
+  border: solid 1px ${myTheme.grey};
   border-radius: 36px;
 `;
 const StyledButton = styled.button`
-  color: rgba(255, 255, 255, 1);
+  color: ${myTheme.white};
   font-family: Roboto;
   font-size: 20px;
   font-weight: 500;
