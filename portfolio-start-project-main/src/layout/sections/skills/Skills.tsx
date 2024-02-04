@@ -25,7 +25,7 @@ export function Skills() {
 const StyledGrid = styled.div `
     display: grid;
     grid-template-columns: repeat(5,1fr);
-    gap: 20px;
+    gap: 40px;
     justify-content: space-around;
 
 `

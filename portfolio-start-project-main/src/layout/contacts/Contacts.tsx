@@ -5,23 +5,43 @@ import { StyledButton } from "../../components/Button";
 export function Contacts() {
   return (
     <section className="Contacts">
+      <h2>Contact me</h2>
       <StyledForm>
-        <StyledLabel>
-          Name
-          <input type="text" name="name" placeholder="Name"></input>{" "}
-        </StyledLabel>
-        <StyledLabel>
-          Email
-          <input type="email" name="email" placeholder="Email"></input>
-        </StyledLabel>
-        <StyledLabel>
-          Subject
-          <input type="text" name="subject" placeholder="Subject"></input>
-        </StyledLabel>
-        <StyledLabel>
-          Message
-          <textarea placeholder="Message"></textarea>
-        </StyledLabel>
+        <label id="name">
+          Name:
+          <input
+            id="name"
+            type="text"
+            name="name"
+            placeholder="Name"
+          ></input>{" "}
+        </label>
+        <label id="email">
+          Email:
+          <input
+            id="email"
+            type="email"
+            name="email"
+            placeholder="Email"
+          ></input>
+        </label>
+        <label id="subject">
+          Subject:
+          <input
+            id="subject"
+            type="text"
+            name="subject"
+            placeholder="Subject"
+          ></input>
+        </label>
+        <label id="message">
+          Message:
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Message"
+          ></textarea>
+        </label>
         <StyledButton width={"180px"} type="submit">
           Submit
         </StyledButton>
@@ -39,11 +59,16 @@ const StyledForm = styled.form`
   border-radius: 20px;
   padding: 100px;
   background-color: ${myTheme.secondary};
-`;
 
-const StyledLabel = styled.label`
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  margin-bottom: 15px;
+  label {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 15px;
+  }
+
+  textarea {
+    display: flex;
+    justify-content: space-between;
+  }
 `;
