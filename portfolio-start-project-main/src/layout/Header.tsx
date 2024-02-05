@@ -2,11 +2,12 @@ import styled from "styled-components";
 import logo from "../assets/images/Logo.svg";
 import { myTheme } from "../styles/Theme";
 import { StyledButton } from "../components/Button";
+import { Logo } from "../components/Logo";
 
 export function Header() {
   return (
     <StyledHeader>
-      <img src={logo} alt="logo"></img>
+      <Logo/>
       <StyledNav>
         <ul>
           <li>
