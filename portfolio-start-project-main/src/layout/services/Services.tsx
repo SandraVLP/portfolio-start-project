@@ -1,7 +1,7 @@
 import Work1 from "../../assets/images/works-1.jpeg";
-import Resp from "../../assets/images/resp.png";
-import Ux from "../../assets/images/ux.png";
-import Front from "../../assets/images/front.png";
+import Resp from "../../assets/images/resp.svg";
+import Ux from "../../assets/images/ux.svg";
+import Front from "../../assets/images/front.svg";
 import styled from "styled-components";
 import Yoga from "../../assets/images/yoga.jpeg";
 import Sight from "../../assets/images/sight.jpeg";
@@ -26,18 +26,32 @@ export function Services() {
           <p>Responsive Design</p>
         </div>
       </StyledList>
-
-        <FlexWrapper direction="column">
-          <Service title={"UX/UI design"} description={"Research, Design, Prototype, and Animation"} link="/ux" src={Work1} alt="Ux design"></Service>
-          <Service title="Front end development" description="Implement UX design into live and user friendly" link="/front" src={Yoga} alt="Yoga"></Service>
-
-          <Service title="responsive design" description="I build landing pages and responsive websites and web App" link="/resp" src={Sight} alt="Sight"></Service>
-        </FlexWrapper>
-       
+      <FlexWrapper direction="column">
+        <Service
+          title={"UX/UI design"}
+          description={"Research, Design, Prototype, and Animation"}
+          link="/ux"
+          src={Work1}
+          alt="Ux design"
+        ></Service>
+        <Service
+          title="Front end development"
+          description="Implement UX design into live and user friendly"
+          link="/front"
+          src={Yoga}
+          alt="Yoga"
+        ></Service>
+        <Service
+          title="responsive design"
+          description="I build landing pages and responsive websites and web App"
+          link="/resp"
+          src={Sight}
+          alt="Sight"
+        ></Service>
+      </FlexWrapper>
     </section>
   );
 }
-
 
 const StyledList = styled.div`
   margin-bottom: 120px;
@@ -50,8 +64,9 @@ const StyledList = styled.div`
     margin-right: 30px;
 
     img {
-      width: 120px;
+      /* width: 120px; */
       border-radius: 20px;
+      padding: 25px;
       background-color: rgba(45, 76, 255, 0.13);
     }
 
