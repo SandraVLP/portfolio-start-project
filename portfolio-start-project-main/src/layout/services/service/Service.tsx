@@ -1,3 +1,4 @@
+import { Link } from "../../../components/Link";
 import { myTheme } from "../../../styles/Theme";
 import styled from "styled-components";
 
@@ -17,7 +18,7 @@ export const Service = (props:ServicePropsType) => {
       {" "}
       <p>{props.title}</p>
       <h3>{props.description}</h3>
-      <a href={props.link}>Learn more</a>
+      <Link href={props.link} title="Learn more"/> 
     </div>
 
     <StyledImg src={props.src} alt={props.alt}></StyledImg>

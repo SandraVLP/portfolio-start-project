@@ -20,4 +20,5 @@ export const StyledButton = styled.button<StyleBtnPropsType>`
   border: none;
   background-color: ${myTheme.primary};
   cursor: pointer;
+  text-decoration: none;
 `;

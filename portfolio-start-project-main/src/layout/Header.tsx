@@ -1,29 +1,31 @@
 import styled from "styled-components";
-import logo from "../assets/images/Logo.svg";
 import { myTheme } from "../styles/Theme";
 import { StyledButton } from "../components/Button";
 import { Logo } from "../components/Logo";
+import { Link } from "../components/Link";
 
 export function Header() {
   return (
     <StyledHeader>
-      <Logo/>
+      <Logo />
       <StyledNav>
         <ul>
           <li>
-            <a href="/home">Home</a>
+            <Link href="/home" title="Home"/>
           </li>
           <li>
-            <a href="/about">About</a>
+          <Link href="/about" title="About"/>
           </li>
           <li>
-            <a href="/service">Service</a>
+          <Link href="/service" title="Service"/>
           </li>
           <li>
-            <a href="/work">My work</a>
+          <Link href="/work" title="My work"/>
           </li>
           <li>
-            <StyledButton width="146px" as="a"  href="/resume">Resume</StyledButton>
+            <StyledButton width="146px" as="a" href="/resume">
+              Resume
+            </StyledButton>
           </li>
         </ul>
       </StyledNav>
@@ -42,16 +44,11 @@ const StyledNav = styled.nav`
   justify-content: space-between;
   align-items: center;
 
-
   li {
     margin-right: 30px;
     &:first-child {
-      color: ${myTheme.primary};
-    }
+      color: ${myTheme.primary}; 
+    } 
   }
 
-  a {
-    
-  }
 `;
-

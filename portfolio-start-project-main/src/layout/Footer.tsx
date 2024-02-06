@@ -6,7 +6,7 @@ import { FlexWrapper } from "../components/FlexWrapper";
 export function Footer() {
   return (
     <StyledFooter>
-      <span>Designed and developed by Rostam Sadiqi 2021</span>
+      <small>Designed and developed by Rostam Sadiqi 2021</small>
       
         <FlexWrapper>
           <Icon
