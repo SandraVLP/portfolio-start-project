@@ -1,11 +1,16 @@
 import styled from "styled-components";
 import FotoAbout from "../../../assets//images/foto-about.jpg";
 import { FlexWrapper } from "../../../components/FlexWrapper";
+import { myTheme } from "../../../styles/Theme";
+
 
 export function About() {
   return (
     <StyledAbout className="About">
-      <StyledImg src={FotoAbout} alt="Foto about"></StyledImg>
+      <StyledRectngle className="foto-container">
+       
+        <StyledImg src={FotoAbout} alt="Foto about"></StyledImg></StyledRectngle>
+      
 
       <FlexWrapper direction="column" justify="flex-start" maxwidth="550px">
         <h2>About me</h2>
@@ -33,4 +38,16 @@ const StyledAbout = styled.section`
 const StyledImg = styled.img`
   max-width: 280px;
   border-radius: 20px;
+  position: absolute;
+  top: -40px;
+  left: 50px;
 `;
+
+const StyledRectngle = styled.div `
+  border: solid 3px ${myTheme.primary};
+  width: 280px;
+  height: 420px; //Поправить
+  border-radius: 20px;
+  position: relative;
+
+`
