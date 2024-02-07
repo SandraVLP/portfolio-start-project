@@ -3,31 +3,29 @@ import { myTheme } from "../../../styles/Theme";
 import styled from "styled-components";
 
 type ServicePropsType = {
-    title?: string
-    description?: string
-    src?: string
-    alt?: string
-    link?: string
+  title?: string;
+  description?: string;
+  src?: string;
+  alt?: string;
+  link?: string;
+};
 
-}
-
-export const Service = (props:ServicePropsType) => {
+export const Service = (props: ServicePropsType) => {
   return (
     <StyledDescription className="service-description">
-    <div className="service-info">
-      {" "}
-      <p>{props.title}</p>
-      <h3>{props.description}</h3>
-      <Link href={props.link} title="Learn more"/> 
-    </div>
+      <div className="service-info">
+        <p>{props.title}</p>
+        <StyledTextDescription>{props.description}</StyledTextDescription>
+        <Link href={props.link} title="Learn more" />
+      </div>
 
-    <StyledImg src={props.src} alt={props.alt}></StyledImg>
-  </StyledDescription>
-  )
-}
+      <StyledImg src={props.src} alt={props.alt}></StyledImg>
+    </StyledDescription>
+  );
+};
 
 const StyledDescription = styled.div`
-width: 80%;
+  width: 80%;
   border: solid 1px ${myTheme.grey};
   border-radius: 30px;
   position: relative;
@@ -47,4 +45,8 @@ const StyledImg = styled.img`
   top: -45px;
   right: 50px;
   border-radius: 20px;
+`;
+
+const StyledTextDescription = styled.h3`
+  margin: 35px 0 70px 0;
 `;

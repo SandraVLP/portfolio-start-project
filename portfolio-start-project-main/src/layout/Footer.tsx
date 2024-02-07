@@ -8,12 +8,12 @@ export function Footer() {
     <StyledFooter>
       <small>Designed and developed by Rostam Sadiqi 2021</small>
       
-        <FlexWrapper>
+        <FlexWrapper gap="20px" width="fit-content">
           <Icon
             iconId="ball"
-            width="22px"
-            height="22px"
-            viewbox="0 0 22 22"
+            width="24px"
+            height="24px"
+            viewbox="0 0 24 24"
           ></Icon>
           <Icon
             iconId="be"
@@ -42,12 +42,8 @@ const StyledFooter = styled.footer`
   height: 10vh;
   background-color: ${myTheme.secondary};
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 
-  div {
-    display: flex;
-    justify-content: space-between;
-  }
   
 `;

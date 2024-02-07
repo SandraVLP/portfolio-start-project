@@ -43,7 +43,7 @@ export function Services() {
           alt="Yoga"
         ></Service>
         <Service
-          title="responsive design"
+          title="Responsive design"
           description="I build landing pages and responsive websites and web App"
           link="/resp"
           src={Sight}
