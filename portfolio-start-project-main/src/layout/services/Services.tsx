@@ -7,11 +7,12 @@ import Yoga from "../../assets/images/yoga.jpeg";
 import Sight from "../../assets/images/sight.jpeg";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Service } from "./service/Service";
+import { MyTitle } from "../../components/MyTitle";
 
 export function Services() {
   return (
     <section className="services">
-      <h2>What I do</h2>
+      <MyTitle text="What I do"/>
       <StyledList className="service-list">
         <div>
           <img src={Ux} alt="UX"></img>
@@ -55,6 +56,7 @@ export function Services() {
 
 const StyledList = styled.div`
   margin-bottom: 120px;
+  margin-top: 90px;
   display: flex;
 
   div {

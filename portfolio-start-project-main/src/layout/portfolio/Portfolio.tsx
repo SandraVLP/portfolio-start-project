@@ -6,11 +6,12 @@ import Yoga from "../../assets/images/yoga.jpeg";
 import { myTheme } from "../../styles/Theme";
 import { StyledButton } from "../../components/Button";
 import { FlexWrapper } from "../../components/FlexWrapper";
+import { MyTitle } from "../../components/MyTitle";
 
 export function Portfolio() {
   return (
     <section className="Portfolio">
-      <h2>My recent works</h2>
+      <MyTitle text="My recent works"/>
       <StyledList>
         <li>All</li>
         <li>UX/UI Design</li>
@@ -34,6 +35,7 @@ export function Portfolio() {
 }
 
 const StyledList = styled.ul`
+margin-top: 75px;
   li {
     margin-right: 40px;
   }

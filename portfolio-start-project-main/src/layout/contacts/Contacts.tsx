@@ -1,11 +1,12 @@
 import styled from "styled-components";
 import { myTheme } from "../../styles/Theme";
 import { StyledButton } from "../../components/Button";
+import { MyTitle } from "../../components/MyTitle";
 
 export function Contacts() {
   return (
     <section className="Contacts">
-      <h2>Contact me</h2>
+      <MyTitle text="Contact me"/>
       <StyledForm>
         <label id="name">
           Name:
@@ -51,6 +52,7 @@ export function Contacts() {
 }
 
 const StyledForm = styled.form`
+margin-top: 70px;
   max-width: 545px;
   display: flex;
   flex-direction: column;
