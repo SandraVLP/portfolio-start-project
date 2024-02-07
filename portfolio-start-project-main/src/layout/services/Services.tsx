@@ -9,12 +9,14 @@ import { FlexWrapper } from "../../components/FlexWrapper";
 import { Service } from "./service/Service";
 import { MyTitle } from "../../components/MyTitle";
 
+
 export function Services() {
   return (
     <section id="service" className="services">
-      <MyTitle text="What I do"/>
+      <MyTitle text="What I do" />
       <StyledList className="service-list">
         <div>
+          {/* <Icon iconId="uxm" width="22px" height="22px" viewbox="0 0 22 22"></Icon> */}
           <img src={Ux} alt="UX"></img>
           <p> UX/UI Design</p>
         </div>
@@ -66,7 +68,7 @@ const StyledList = styled.div`
     margin-right: 30px;
 
     img {
-      /* width: 120px; */
+      width: 120px;
       border-radius: 20px;
       padding: 25px;
       background-color: rgba(45, 76, 255, 0.13);
