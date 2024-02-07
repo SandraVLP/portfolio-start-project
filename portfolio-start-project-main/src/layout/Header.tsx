@@ -47,8 +47,12 @@ const StyledNav = styled.nav`
   li {
     margin-right: 30px;
     &:first-child {
-      color: ${myTheme.primary}; 
+      color: ${myTheme.primary};
+      a:only-child {
+    color: ${myTheme.primary}; 
+  } 
     } 
   }
+
 
 `;
