@@ -10,10 +10,10 @@ export function Footer() {
       
         <FlexWrapper gap="20px" width="fit-content">
           <Icon
-            iconId="ball"
-            width="24px"
-            height="24px"
-            viewbox="0 0 24 24"
+            iconId="teleg"
+            width="22px"
+            height="22px"
+            viewbox="0 0 22 22"
           ></Icon>
           <Icon
             iconId="be"

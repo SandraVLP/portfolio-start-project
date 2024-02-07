@@ -7,7 +7,7 @@ import { MyTitle } from "../../../components/MyTitle";
 
 export function About() {
   return (
-    <section className="About">
+    <section id="about" className="About">
       <FlexWrapper padding="140px 0 0 0" align="flex-start" justify="center" gap="160px">
       <StyledRectngle className="foto-container">
        

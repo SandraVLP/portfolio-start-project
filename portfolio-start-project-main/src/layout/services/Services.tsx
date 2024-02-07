@@ -11,7 +11,7 @@ import { MyTitle } from "../../components/MyTitle";
 
 export function Services() {
   return (
-    <section className="services">
+    <section id="service" className="services">
       <MyTitle text="What I do"/>
       <StyledList className="service-list">
         <div>

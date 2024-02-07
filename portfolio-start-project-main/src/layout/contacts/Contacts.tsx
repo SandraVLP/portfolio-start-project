@@ -5,7 +5,7 @@ import { MyTitle } from "../../components/MyTitle";
 
 export function Contacts() {
   return (
-    <section className="Contacts">
+    <section id="contacts" className="Contacts">
       <MyTitle text="Contact me"/>
       <StyledForm>
         <label id="name">

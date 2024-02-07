@@ -6,21 +6,27 @@ import { Link } from "../components/Link";
 
 export function Header() {
   return (
-    <StyledHeader>
+    <StyledHeader id="home">
       <Logo />
       <StyledNav>
         <ul>
           <li>
-            <Link href="/home" title="Home"/>
+            <Link href="#home" title="Home"/>
           </li>
           <li>
-          <Link href="/about" title="About"/>
+          <Link href="#about" title="About"/>
           </li>
           <li>
-          <Link href="/service" title="Service"/>
+          <Link href="#skills" title="Skills"/>
           </li>
           <li>
-          <Link href="/work" title="My work"/>
+          <Link href="#service" title="Service"/>
+          </li>
+          <li>
+          <Link href="#works" title="My work"/>
+          </li>
+          <li>
+          <Link href="#contacts" title="Contacts"/>
           </li>
           <li>
             <StyledButton width="146px" as="a" href="/resume">

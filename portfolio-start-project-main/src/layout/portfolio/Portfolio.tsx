@@ -10,7 +10,7 @@ import { MyTitle } from "../../components/MyTitle";
 
 export function Portfolio() {
   return (
-    <section className="Portfolio">
+    <section id="works" className="Portfolio">
       <MyTitle text="My recent works"/>
       <StyledList>
         <li>All</li>

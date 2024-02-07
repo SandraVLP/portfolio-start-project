@@ -6,7 +6,7 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 
 export function Main() {
   return (
-    <StyledMain>
+    <StyledMain id="main">
       <FlexWrapper gap="90px" justify="space-evenly">
         <StyledInfo className="Info">
           <span>Hello, I’m</span>

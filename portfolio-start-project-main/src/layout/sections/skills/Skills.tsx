@@ -4,7 +4,7 @@ import { MyTitle } from "../../../components/MyTitle";
 
 export function Skills() {
   return (
-    <section className="Skills">
+    <section id="skills" className="Skills">
       <MyTitle text="Skills"></MyTitle>
       <StyledGrid className="skills-grid">
         <Icon iconId="redux"></Icon>
