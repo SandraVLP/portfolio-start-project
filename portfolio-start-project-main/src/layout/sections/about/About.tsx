@@ -6,34 +6,32 @@ import { myTheme } from "../../../styles/Theme";
 
 export function About() {
   return (
-    <StyledAbout className="About">
+    <section className="About">
+      <FlexWrapper padding="140px 0 0 0" align="flex-start" justify="center" gap="160px">
       <StyledRectngle className="foto-container">
        
-        <StyledImg src={FotoAbout} alt="Foto about"></StyledImg></StyledRectngle>
-      
+       <StyledImg src={FotoAbout} alt="Foto about"></StyledImg></StyledRectngle>
+     
 
-      <FlexWrapper direction="column" justify="flex-start" maxwidth="550px">
-        <h2>About me</h2>
-        <p>
-          Hello! My name is Rostam Sadiqi and I am a UX/UI designer and Front
-          End Developer. I enjoy creating things that live on the internet. An
-          experienced Software Engineer with a demonstrated history of working
-          in the Computer Software industry. Skilled in Web Design, UX/UI
-          design, and Front-end Development. Specialize in Information Security
-          and software engineering, creating dynamic and beautiful web pages. I
-          have been in the field for nearly 5 years, and have been loving every
-          minute of it.{" "}
-        </p>
+     <FlexWrapper direction="column" justify="flex-start" maxwidth="550px" align="flex-start" gap="40px">
+       <h2>About me</h2>
+       <p>
+         Hello! My name is Rostam Sadiqi and I am a UX/UI designer and Front
+         End Developer. I enjoy creating things that live on the internet. An
+         experienced Software Engineer with a demonstrated history of working
+         in the Computer Software industry. Skilled in Web Design, UX/UI
+         design, and Front-end Development. Specialize in Information Security
+         and software engineering, creating dynamic and beautiful web pages. I
+         have been in the field for nearly 5 years, and have been loving every
+         minute of it.{" "}
+       </p>
+     </FlexWrapper>
       </FlexWrapper>
-    </StyledAbout>
+    </section>
   );
 }
 
-const StyledAbout = styled.section`
-  flex-direction: row;
-  justify-content: space-around;
-  padding-top: 140px;
-`;
+
 
 const StyledImg = styled.img`
   max-width: 280px;
