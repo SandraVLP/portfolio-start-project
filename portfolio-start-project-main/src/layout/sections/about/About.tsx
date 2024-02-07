@@ -2,6 +2,7 @@ import styled from "styled-components";
 import FotoAbout from "../../../assets//images/foto-about.jpg";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { myTheme } from "../../../styles/Theme";
+import { MyTitle } from "../../../components/MyTitle";
 
 
 export function About() {
@@ -14,7 +15,7 @@ export function About() {
      
 
      <FlexWrapper direction="column" justify="flex-start" maxwidth="550px" align="flex-start" gap="40px">
-       <h2>About me</h2>
+      <MyTitle text="About me"></MyTitle>
        <p>
          Hello! My name is Rostam Sadiqi and I am a UX/UI designer and Front
          End Developer. I enjoy creating things that live on the internet. An
