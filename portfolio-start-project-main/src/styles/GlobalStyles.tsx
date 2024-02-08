@@ -12,44 +12,30 @@ export const GlobalStyles = createGlobalStyle`
 
     body {
   margin: 0, auto;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'Roboto', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-    h1 {
-        font-family: Poppins;
-      font-size: 60px;
-      font-weight: 700;
-      line-height: 70px;
-      letter-spacing: 0em;
-      color: ${myTheme.black.dark};
-      
-      }
-
-      h2 {
-        /* margin-bottom: 75px; */
-  color:${myTheme.primary};
-  font-family: Roboto;
-font-size: 40px;
-font-weight: 700;
-line-height: 30px;
-letter-spacing: 0em;
-text-align: center;
-
+h1 {
+  font-family: Poppins;
+  font-size: 60px;
+  font-weight: 700;
+  line-height: 70px;
+  letter-spacing: 0em;
+  color: ${myTheme.black.dark};      
 }
 
 p {
   color: ${myTheme.black.light};
   font-family: Roboto;
-font-size: 18px;
-font-weight: 400;
-line-height: 30px;
-letter-spacing: 0em;
-text-align: left;
-
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+  letter-spacing: 0em;
+  text-align: left;
 }
 
 section {
@@ -75,4 +61,4 @@ li {
       color: ${myTheme.primary};
     }
   }
-  `
+  `;
