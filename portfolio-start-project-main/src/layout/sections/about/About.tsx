@@ -16,9 +16,9 @@ export function About() {
           justify="center"
           gap="160px"
         >
-          <StyledRectngle className="foto-container">
+          <Photowrapper className="foto-container">
             <StyledImg src={FotoAbout} alt="Foto about"></StyledImg>
-          </StyledRectngle>
+          </Photowrapper>
           <FlexWrapper
             direction="column"
             justify="flex-start"
@@ -47,15 +47,25 @@ export function About() {
 const StyledImg = styled.img`
   max-width: 280px;
   border-radius: 20px;
-  position: absolute;
-  top: -40px;
-  left: 50px;
+
 `;
 
-const StyledRectngle = styled.div`
+const Photowrapper = styled.div`
+position: relative;
+z-index: 0;
+ &::before {
+  content: "";
   border: solid 3px ${myTheme.primary};
   width: 280px;
-  height: 420px; //Поправить
+  height: 420px; 
   border-radius: 20px;
-  position: relative;
+  position: absolute;
+  bottom: -40px;
+  right: 50px;
+  z-index: -1;
+
+ }
+
+
+
 `;
