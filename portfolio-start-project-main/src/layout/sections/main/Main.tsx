@@ -15,7 +15,7 @@ export function Main() {
             I’m a UX/UI designer and Front End Developer based in Kuala Lumpur,
             Malaysia! 🇲🇾. I love designing, coding, creating and building stuff.
           </p>
-          <StyledButton width={"170px"}>Send E-mail</StyledButton>
+          <StyledButton width={"170px"}>Send Email</StyledButton>
         </StyledInfo>
         <img src={MainFoto} alt="Main Foto"></img>
       </FlexWrapper>
