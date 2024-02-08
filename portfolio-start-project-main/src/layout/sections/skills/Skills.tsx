@@ -1,11 +1,13 @@
 import styled from "styled-components";
 import { Icon } from "../../../components/Icon";
 import { MyTitle } from "../../../components/MyTitle";
+import { Container } from "../../../components/Container";
 
 export function Skills() {
   return (
     <section id="skills" className="Skills">
-      <MyTitle text="Skills"></MyTitle>
+     <Container>
+     <MyTitle text="Skills"></MyTitle>
       <StyledGrid className="skills-grid">
         <Icon iconId="redux"></Icon>
         <Icon iconId="react-js"></Icon>
@@ -18,6 +20,7 @@ export function Skills() {
         <Icon iconId="styled-comp"></Icon>
         <Icon iconId="typescript"></Icon>
       </StyledGrid>
+     </Container>
     </section>
   );
 }
@@ -27,5 +30,5 @@ margin-top: 90px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 40px;
-  justify-content: space-around;
+  justify-items: center;
 `;
