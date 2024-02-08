@@ -47,10 +47,9 @@ export function Header() {
 
 const StyledHeader = styled.header`
   background-color: ${myTheme.secondary};
-  height: fit-content;
-  padding-top: 20px;
+  padding: 15px 0;
   position: fixed;
-  height: 0;
+  top: 0;
   right: 0;
   left: 0;
   z-index: 5;
