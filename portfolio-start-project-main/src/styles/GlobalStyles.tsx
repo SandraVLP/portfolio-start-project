@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     body {
-  margin: 0, auto;
+  margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
@@ -40,10 +40,6 @@ p {
 
 section {
   padding-bottom: 140px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
 }
 
 ul {

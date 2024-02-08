@@ -7,41 +7,46 @@ import { myTheme } from "../../styles/Theme";
 import { StyledButton } from "../../components/Button";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { MyTitle } from "../../components/MyTitle";
+import { Container } from "../../components/Container";
 
 export function Portfolio() {
   return (
     <section id="works" className="Portfolio">
-      <MyTitle text="My recent works"/>
-      <StyledList>
-        <li>All</li>
-        <li>UX/UI Design</li>
-        <li>Web Design</li>
-        <li>Front End Development</li>
-      </StyledList>
-
-      <FlexWrapper wrap="wrap" margin="95px auto" justify="center" gap="25px">
-        {" "}
-        <StyledImg src={Fitness}></StyledImg>
-        <StyledImg src={Sight}></StyledImg>
-        <StyledImg src={Puma}></StyledImg>
-        <StyledImg src={Yoga}></StyledImg>
-      </FlexWrapper>
-
-      <StyledButton color={myTheme.white} width="214px">
-        See more
-      </StyledButton>
+      <Container>
+        <FlexWrapper direction="column">
+          <MyTitle text="My recent works" />
+          <StyledList>
+            <li>All</li>
+            <li>UX/UI Design</li>
+            <li>Web Design</li>
+            <li>Front End Development</li>
+          </StyledList>
+          <FlexWrapper
+            wrap="wrap"
+            margin="95px auto"
+            justify="center"
+            gap="25px"
+          >
+            <StyledImg src={Fitness}></StyledImg>
+            <StyledImg src={Sight}></StyledImg>
+            <StyledImg src={Puma}></StyledImg>
+            <StyledImg src={Yoga}></StyledImg>
+          </FlexWrapper>
+          <StyledButton color={myTheme.white} width="214px">
+            See more
+          </StyledButton>
+        </FlexWrapper>
+      </Container>
     </section>
   );
 }
 
 const StyledList = styled.ul`
-margin-top: 75px;
+  margin-top: 75px;
   li {
     margin-right: 40px;
   }
 `;
-
-
 
 const StyledImg = styled.img`
   width: 50%;

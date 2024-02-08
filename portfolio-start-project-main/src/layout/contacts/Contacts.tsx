@@ -2,57 +2,64 @@ import styled from "styled-components";
 import { myTheme } from "../../styles/Theme";
 import { StyledButton } from "../../components/Button";
 import { MyTitle } from "../../components/MyTitle";
+import { Container } from "../../components/Container";
+import { FlexWrapper } from "../../components/FlexWrapper";
 
 export function Contacts() {
   return (
     <section id="contacts" className="Contacts">
-      <MyTitle text="Contact me"/>
-      <StyledForm>
-        <label id="name">
-          Name:
-          <input
-            id="name"
-            type="text"
-            name="name"
-            placeholder="Name"
-          ></input>{" "}
-        </label>
-        <label id="email">
-          Email:
-          <input
-            id="email"
-            type="email"
-            name="email"
-            placeholder="Email"
-          ></input>
-        </label>
-        <label id="subject">
-          Subject:
-          <input
-            id="subject"
-            type="text"
-            name="subject"
-            placeholder="Subject"
-          ></input>
-        </label>
-        <label id="message">
-          Message:
-          <textarea
-            id="message"
-            name="message"
-            placeholder="Message"
-          ></textarea>
-        </label>
-        <StyledButton width={"180px"} type="submit">
-          Submit
-        </StyledButton>
-      </StyledForm>
+      <Container>
+        <FlexWrapper direction="column">
+          {" "}
+          <MyTitle text="Contact me" />
+          <StyledForm>
+            <label id="name">
+              Name:
+              <input
+                id="name"
+                type="text"
+                name="name"
+                placeholder="Name"
+              ></input>{" "}
+            </label>
+            <label id="email">
+              Email:
+              <input
+                id="email"
+                type="email"
+                name="email"
+                placeholder="Email"
+              ></input>
+            </label>
+            <label id="subject">
+              Subject:
+              <input
+                id="subject"
+                type="text"
+                name="subject"
+                placeholder="Subject"
+              ></input>
+            </label>
+            <label id="message">
+              Message:
+              <textarea
+                id="message"
+                name="message"
+                placeholder="Message"
+              ></textarea>
+            </label>
+            <StyledButton width={"180px"} type="submit">
+              Submit
+            </StyledButton>
+          </StyledForm>
+        </FlexWrapper>
+      </Container>
     </section>
   );
 }
 
 const StyledForm = styled.form`
-margin-top: 70px;
+  margin-top: 70px;
   max-width: 545px;
   display: flex;
   flex-direction: column;

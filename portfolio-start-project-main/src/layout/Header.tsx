@@ -10,7 +10,7 @@ export function Header() {
   return (
     <StyledHeader id="home">
       <Container>
-        <FlexWrapper justify="space-between">
+        <FlexWrapper>
           <Logo />
           <StyledNav>
             <ul>

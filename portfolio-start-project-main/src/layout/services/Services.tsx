@@ -8,50 +8,53 @@ import Sight from "../../assets/images/sight.jpeg";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Service } from "./service/Service";
 import { MyTitle } from "../../components/MyTitle";
-
+import { Container } from "../../components/Container";
 
 export function Services() {
   return (
     <section id="service" className="services">
-      <MyTitle text="What I do" />
-      <StyledList className="service-list">
-        <div>
-          {/* <Icon iconId="uxm" width="22px" height="22px" viewbox="0 0 22 22"></Icon> */}
-          <img src={Ux} alt="UX"></img>
-          <p> UX/UI Design</p>
-        </div>
-        <div>
-          <img src={Front} alt="Front"></img>
-          <p>Front End Development</p>
-        </div>
-        <div>
-          <img src={Resp} alt="Resp"></img>
-          <p>Responsive Design</p>
-        </div>
-      </StyledList>
-      <FlexWrapper direction="column">
-        <Service
-          title={"UX/UI design"}
-          description={"Research, Design, Prototype, and Animation"}
-          link="/ux"
-          src={Work1}
-          alt="Ux design"
-        ></Service>
-        <Service
-          title="Front end development"
-          description="Implement UX design into live and user friendly"
-          link="/front"
-          src={Yoga}
-          alt="Yoga"
-        ></Service>
-        <Service
-          title="Responsive design"
-          description="I build landing pages and responsive websites and web App"
-          link="/resp"
-          src={Sight}
-          alt="Sight"
-        ></Service>
-      </FlexWrapper>
+      <Container>
+        <FlexWrapper direction="column">
+          <MyTitle text="What I do" />
+          <StyledList className="service-list">
+            <div>
+              <img src={Ux} alt="UX"></img>
+              <p> UX/UI Design</p>
+            </div>
+            <div>
+              <img src={Front} alt="Front"></img>
+              <p>Front End Development</p>
+            </div>
+            <div>
+              <img src={Resp} alt="Resp"></img>
+              <p>Responsive Design</p>
+            </div>
+          </StyledList>
+          <FlexWrapper direction="column">
+            <Service
+              title={"UX/UI design"}
+              description={"Research, Design, Prototype, and Animation"}
+              link="/ux"
+              src={Work1}
+              alt="Ux design"
+            ></Service>
+            <Service
+              title="Front end development"
+              description="Implement UX design into live and user friendly"
+              link="/front"
+              src={Yoga}
+              alt="Yoga"
+            ></Service>
+            <Service
+              title="Responsive design"
+              description="I build landing pages and responsive websites and web App"
+              link="/resp"
+              src={Sight}
+              alt="Sight"
+            ></Service>
+          </FlexWrapper>
+        </FlexWrapper>
+      </Container>
     </section>
   );
 }

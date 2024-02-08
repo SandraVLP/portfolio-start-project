@@ -15,7 +15,7 @@ type FlexWrapperPropsType = {
 export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   display: flex;
   flex-direction: ${props => props.direction || "row"};
-  justify-content: ${props => props.justify || "space-around"};
+  justify-content: ${props => props.justify || "space-between"};
   align-items: ${props => props.align || "center"};
   flex-wrap: ${props => props.wrap || "nowrap"};
   margin: ${props => props.margin || "0"};

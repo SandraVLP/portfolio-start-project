@@ -9,7 +9,7 @@ export function Main() {
   return (
     <StyledMain id="main">
       <Container>
-        <FlexWrapper gap="90px" justify="space-between">
+        <FlexWrapper gap="90px">
           <StyledInfo className="Info">
             <span>Hello, I’m</span>
             <h1>Fabio Scaletta Web developer</h1>
