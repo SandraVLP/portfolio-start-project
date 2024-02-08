@@ -28,8 +28,10 @@ export function Main() {
 }
 
 const StyledMain = styled.main`
-  padding-top: 50px;
-  padding-bottom: 90px;
+display: flex;
+min-height: 100vh;
+  /* padding-top: 50px;
+  padding-bottom: 90px; */
   background-color: ${myTheme.secondary};
 
   span {

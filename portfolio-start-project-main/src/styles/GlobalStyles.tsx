@@ -17,7 +17,10 @@ export const GlobalStyles = createGlobalStyle`
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+
+  
 }
+
 
 h1 {
   font-family: Poppins;

@@ -23,4 +23,5 @@ export const FlexWrapper = styled.div<FlexWrapperPropsType>`
   gap: ${props => props.gap || "0"};
   max-width: ${props => props.maxwidth || "none"}; 
   width: ${props => props.width || "100%"};
+  height: 100%;
 `;
