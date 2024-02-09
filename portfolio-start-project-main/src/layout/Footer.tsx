@@ -12,31 +12,39 @@ export function Footer() {
         <FlexWrapper>
           <small>Designed and developed by Rostam Sadiqi 2021</small>
           <FlexWrapper gap="20px" width="fit-content">
-            <Icon
-              iconId="be"
-              width="22px"
-              height="22px"
-              viewbox="0 0 22 22"
-            ></Icon>
-            <Icon
-              iconId="tele"
-              width="22px"
-              height="22px"
-              viewbox="0 0 22 22"
-            ></Icon>
+            <SocialLink>
+              <Icon
+                iconId="in"
+                width="17px"
+                height="17px"
+                viewbox="0 0 17px 17px"
+              ></Icon>
+            </SocialLink>
+            <SocialLink>
+              <Icon
+                iconId="tg"
+                width="17px"
+                height="17px"
+                viewbox="0 0 17px 17px"
+              ></Icon>
+            </SocialLink>
             {/* <img src={Tele}></img> */}
-            <Icon
-              iconId="in"
-              width="22px"
-              height="22px"
-              viewbox="0 0 22 22"
-            ></Icon>
-            <Icon
-              iconId="inst"
-              width="22px"
-              height="22px"
-              viewbox="0 0 22 22"
-            ></Icon>
+            <SocialLink>
+              <Icon
+                iconId="vk"
+                width="17px"
+                height="17px"
+                viewbox="0 0 17px 17px"
+              ></Icon>
+            </SocialLink>
+            <SocialLink>
+              <Icon
+                iconId="inst"
+                width="17px"
+                height="17px"
+                viewbox="0 0 17px 17px"
+              ></Icon>
+            </SocialLink>
           </FlexWrapper>
         </FlexWrapper>
       </Container>
@@ -46,6 +54,24 @@ export function Footer() {
 
 const StyledFooter = styled.footer`
   height: 10vh;
+  padding: 60px 0;
   background-color: ${myTheme.secondary};
-  
+`;
+
+const SocialLink = styled.a`
+color: ${myTheme.primary};
+border: 2px solid ${myTheme.primary};
+border-radius: 5px;
+width: 35px;
+height: 35px;
+display: flex;
+justify-content: center;
+align-items: center;
+
+&:hover {
+  cursor: pointer;
+  color: ${myTheme.black.light};
+border: 2px solid ${myTheme.black.light};
+transform: translateY(-4px);
+}
 `;

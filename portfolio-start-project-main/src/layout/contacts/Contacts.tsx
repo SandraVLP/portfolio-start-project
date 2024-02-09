@@ -1,7 +1,6 @@
 import styled from "styled-components";
 import { myTheme } from "../../styles/Theme";
 import { StyledButton } from "../../components/Button";
-import { MyTitle } from "../../components/MyTitle";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
 
