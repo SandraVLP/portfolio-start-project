@@ -17,20 +17,19 @@ export const Service = (props: ServicePropsType) => {
         <StyledTextDescription>{props.description}</StyledTextDescription>
         <a href={props.link}>Learn more</a>
       </div>
-
-      <StyledImg src={props.src} alt={props.alt}></StyledImg>
+<StyledImg src={props.src} alt={props.alt}></StyledImg>
     </StyledDescription>
   );
 };
 
 const StyledDescription = styled.div`
-  width: 80%;
+  width: 100%;
   border: solid 1px ${myTheme.grey};
   border-radius: 30px;
   position: relative;
   padding: 50px;
   margin-bottom: 80px;
-  height: 400px;
+  height: 50vh;
 
   div {
     max-width: 380px;
@@ -49,3 +48,4 @@ const StyledImg = styled.img`
 const StyledTextDescription = styled.h3`
   margin: 35px 0 70px 0;
 `;
+
