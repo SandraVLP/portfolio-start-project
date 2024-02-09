@@ -7,48 +7,48 @@ import { FlexWrapper } from "../../components/FlexWrapper";
 
 export function Contacts() {
   return (
-    <section id="contacts" className="Contacts">
+    <section id="contacts" className="contacts">
       <Container>
-        <FlexWrapper direction="column">
+        <FlexWrapper direction="column" justify="center">
           {" "}
-          <MyTitle text="Contact me" />
           <StyledForm>
+          <Title> Contact me</Title>
             <label id="name">
               Name:
-              <input
+              <Field
                 id="name"
                 type="text"
                 name="name"
                 placeholder="Name"
-              ></input>{" "}
+              ></Field>{" "}
             </label>
             <label id="email">
               Email:
-              <input
+              <Field
                 id="email"
                 type="email"
                 name="email"
                 placeholder="Email"
-              ></input>
+              ></Field>
             </label>
             <label id="subject">
               Subject:
-              <input
+              <Field
                 id="subject"
                 type="text"
                 name="subject"
                 placeholder="Subject"
-              ></input>
+              ></Field>
             </label>
             <label id="message">
               Message:
-              <textarea
+              <Field as={"textarea"}
                 id="message"
                 name="message"
                 placeholder="Message"
-              ></textarea>
+              ></Field>
             </label>
-            <StyledButton width={"180px"} type="submit">
+            <StyledButton width={"180px"} type="submit" color={myTheme.primary} bgcolor={myTheme.white}>
               Submit
             </StyledButton>
           </StyledForm>
@@ -59,25 +59,48 @@ export function Contacts() {
 }
 
 const StyledForm = styled.form`
-  margin-top: 70px;
-  max-width: 545px;
+  color: ${myTheme.white};
+  margin-top: 70px; 
+  width: 100%;
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: solid 3px ${myTheme.primary};
+  gap: 10px;
+  box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
-  padding: 100px;
-  background-color: ${myTheme.secondary};
+  padding: 50px;
+  background-color: ${myTheme.primary};
 
   label {
-    width: 100%;
+    width: 50%;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
   }
 
-  textarea {
-    display: flex;
-    justify-content: space-between;
+  ${StyledButton} {
+    margin-top: 20px;
   }
 `;
+
+const Field = styled.input`
+border-radius: 5px;
+border: solid 2px ${myTheme.grey};
+width: 60%;
+padding: 7px 15px;
+  
+`
+
+const Title = styled.h2`
+font-size: 40px;
+font-weight: 700;
+line-height: 30px;
+   background-color: ${myTheme.primary};
+   color: ${myTheme.white};
+   text-align: center;
+   margin-bottom: 40px;
+`
