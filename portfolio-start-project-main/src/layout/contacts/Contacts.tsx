@@ -85,13 +85,27 @@ const StyledForm = styled.form`
   ${StyledButton} {
     margin-top: 20px;
   }
+
+  textarea {
+    resize: none;
+    height: 130px;
+  }
 `;
 
 const Field = styled.input`
+font-family: Roboto;
 border-radius: 5px;
 border: solid 2px ${myTheme.grey};
 width: 60%;
 padding: 7px 15px;
+
+&::placeholder{
+  color: ${myTheme.black.light};
+}
+
+&:focus-visible{
+  outline: 3px auto ${myTheme.secondary};
+}
   
 `
 
