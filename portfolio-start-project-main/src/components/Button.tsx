@@ -22,4 +22,9 @@ export const StyledButton = styled.button<StyleBtnPropsType>`
   background-color:${(props) => props.bgcolor || myTheme.primary};
   cursor: pointer;
   text-decoration: none;
+
+  &:hover{
+    cursor: pointer;
+    opacity: 50%;
+  }
 `;
