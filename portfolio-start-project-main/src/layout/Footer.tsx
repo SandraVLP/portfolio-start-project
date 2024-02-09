@@ -56,7 +56,7 @@ export function Footer() {
 }
 
 const StyledFooter = styled.footer`
-  height: 10vh;
+  height: 35vh;
   padding: 60px 0;
   background-color: ${myTheme.secondary};
 `;

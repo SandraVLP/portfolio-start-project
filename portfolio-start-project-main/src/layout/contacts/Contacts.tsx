@@ -6,7 +6,7 @@ import { FlexWrapper } from "../../components/FlexWrapper";
 
 export function Contacts() {
   return (
-    <section id="contacts" className="contacts">
+    <StyledContacts id="contacts" className="contacts">
       <Container>
         <FlexWrapper direction="column" justify="center">
           {" "}
@@ -63,7 +63,7 @@ export function Contacts() {
           </StyledForm>
         </FlexWrapper>
       </Container>
-    </section>
+    </StyledContacts>
   );
 }
 
@@ -126,3 +126,8 @@ const Title = styled.h2`
   text-align: center;
   margin-bottom: 40px;
 `;
+
+const StyledContacts = styled.section`
+padding: 0;
+  margin-bottom: -45px;
+`

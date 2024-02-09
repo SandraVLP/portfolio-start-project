@@ -10,6 +10,10 @@ export const GlobalStyles = createGlobalStyle`
         box-sizing: border-box;
     }
 
+    *:focus-visible{
+ outline: 3px auto ${myTheme.secondary};;
+    }
+
     body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
