@@ -4,6 +4,7 @@ import { myTheme } from "../styles/Theme";
 type StyleBtnPropsType = {
   width?: string;
   color?: string;
+  bgcolor?: string;
 };
 
 export const StyledButton = styled.button<StyleBtnPropsType>`
@@ -18,7 +19,7 @@ export const StyledButton = styled.button<StyleBtnPropsType>`
   border-radius: 50px;
   gap: 10px;
   border: none;
-  background-color: ${myTheme.primary};
+  background-color:${(props) => props.bgcolor || myTheme.primary};
   cursor: pointer;
   text-decoration: none;
 `;
