@@ -14,6 +14,7 @@ export function Footer() {
           <FlexWrapper gap="20px" width="fit-content">
             <SocialLink>
               <Icon
+              aria-label={"Linkedin"}
                 iconId="in"
                 width="17px"
                 height="17px"
@@ -22,6 +23,7 @@ export function Footer() {
             </SocialLink>
             <SocialLink>
               <Icon
+              aria-label={"Telegram"}
                 iconId="tg"
                 width="17px"
                 height="17px"
@@ -31,6 +33,7 @@ export function Footer() {
             {/* <img src={Tele}></img> */}
             <SocialLink>
               <Icon
+              aria-label={"Vkontakte"}
                 iconId="vk"
                 width="17px"
                 height="17px"
@@ -38,7 +41,7 @@ export function Footer() {
               ></Icon>
             </SocialLink>
             <SocialLink>
-              <Icon
+              <Icon aria-label={"Instagram"}
                 iconId="inst"
                 width="17px"
                 height="17px"

@@ -27,7 +27,7 @@ export function Main() {
   );
 }
 
-const StyledMain = styled.main`
+const StyledMain = styled.section`
 display: flex;
 min-height: 100vh;
   /* padding-top: 50px;

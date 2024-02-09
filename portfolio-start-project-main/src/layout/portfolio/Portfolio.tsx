@@ -28,10 +28,10 @@ export function Portfolio() {
             justify="center"
             gap="25px"
           >
-            <StyledImg src={Fitness}></StyledImg>
-            <StyledImg src={Sight}></StyledImg>
-            <StyledImg src={Puma}></StyledImg>
-            <StyledImg src={Yoga}></StyledImg>
+            <StyledImg src={Fitness} alt="Fitness"></StyledImg>
+            <StyledImg src={Sight} alt="Sight"></StyledImg>
+            <StyledImg src={Puma} alt="Puma"></StyledImg>
+            <StyledImg src={Yoga} alt="Yoga"></StyledImg>
           </FlexWrapper>
           <StyledButton color={myTheme.white} width="214px">
             See more

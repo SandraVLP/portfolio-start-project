@@ -11,43 +11,53 @@ export function Contacts() {
         <FlexWrapper direction="column" justify="center">
           {" "}
           <StyledForm>
-          <Title> Contact me</Title>
-            <label id="name">
+            <Title> Contact me</Title>
+            <label htmlFor="name" aria-labelledby="name">
               Name:
               <Field
+                aria-placeholder="Name"
                 id="name"
                 type="text"
                 name="name"
                 placeholder="Name"
               ></Field>{" "}
             </label>
-            <label id="email">
+            <label htmlFor="email" aria-labelledby="email">
               Email:
               <Field
+                aria-placeholder="Email"
                 id="email"
                 type="email"
                 name="email"
                 placeholder="Email"
               ></Field>
             </label>
-            <label id="subject">
+            <label htmlFor="subject" aria-labelledby="subject">
               Subject:
               <Field
+                aria-placeholder="Subject"
                 id="subject"
                 type="text"
                 name="subject"
                 placeholder="Subject"
               ></Field>
             </label>
-            <label id="message">
+            <label htmlFor="message" aria-labelledby="message">
               Message:
-              <Field as={"textarea"}
+              <Field
+                as={"textarea"}
+                aria-placeholder="Message"
                 id="message"
                 name="message"
                 placeholder="Message"
               ></Field>
             </label>
-            <StyledButton width={"180px"} type="submit" color={myTheme.primary} bgcolor={myTheme.white}>
+            <StyledButton
+              width={"180px"}
+              type="submit"
+              color={myTheme.primary}
+              bgcolor={myTheme.white}
+            >
               Submit
             </StyledButton>
           </StyledForm>
@@ -59,7 +69,7 @@ export function Contacts() {
 
 const StyledForm = styled.form`
   color: ${myTheme.white};
-  margin-top: 70px; 
+  margin-top: 70px;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -92,28 +102,27 @@ const StyledForm = styled.form`
 `;
 
 const Field = styled.input`
-font-family: Roboto;
-border-radius: 5px;
-border: solid 2px ${myTheme.grey};
-width: 60%;
-padding: 7px 15px;
+  font-family: Roboto;
+  border-radius: 5px;
+  border: solid 2px ${myTheme.grey};
+  width: 60%;
+  padding: 7px 15px;
 
-&::placeholder{
-  color: ${myTheme.black.light};
-}
+  &::placeholder {
+    color: ${myTheme.black.light};
+  }
 
-&:focus-visible{
-  outline: 3px auto ${myTheme.secondary};
-}
-  
-`
+  &:focus-visible {
+    outline: 3px auto ${myTheme.secondary};
+  }
+`;
 
 const Title = styled.h2`
-font-size: 40px;
-font-weight: 700;
-line-height: 30px;
-   background-color: ${myTheme.primary};
-   color: ${myTheme.white};
-   text-align: center;
-   margin-bottom: 40px;
-`
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 30px;
+  background-color: ${myTheme.primary};
+  color: ${myTheme.white};
+  text-align: center;
+  margin-bottom: 40px;
+`;
