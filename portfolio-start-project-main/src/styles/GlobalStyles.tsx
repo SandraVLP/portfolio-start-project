@@ -42,6 +42,7 @@ p {
 }
 
 section {
+  font-family: Roboto;
   padding-bottom: 140px;
 }
 
@@ -54,10 +55,10 @@ ul {
   padding: 0;  
 }
 
-/* li {
+a {
+  text-decoration: none;
 
-    &:first-child {
-      color: ${myTheme.primary};
-    }
-  } */
+text-decoration: none;
+color: ${myTheme.black.dark};
+}
   `;

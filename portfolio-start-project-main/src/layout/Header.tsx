@@ -2,7 +2,6 @@ import styled from "styled-components";
 import { myTheme } from "../styles/Theme";
 import { StyledButton } from "../components/Button";
 import { Logo } from "../components/Logo";
-import { Link } from "../components/Link";
 import { Container } from "../components/Container";
 import { FlexWrapper } from "../components/FlexWrapper";
 
@@ -15,22 +14,22 @@ export function Header() {
           <StyledNav>
             <ul>
               <li>
-                <Link href="#home" title="Home" />
+                <Link href="#home">Home</Link>
               </li>
               <li>
-                <Link href="#about" title="About" />
+                <Link href="#about">About</Link>
               </li>
               <li>
-                <Link href="#skills" title="Skills" />
+                <Link href="#skills">Skills</Link>
               </li>
               <li>
-                <Link href="#service" title="Service" />
+                <Link href="#service">Service</Link>
               </li>
               <li>
-                <Link href="#works" title="My work" />
+                <Link href="#works">My work</Link>
               </li>
               <li>
-                <Link href="#contacts" title="Contacts" />
+                <Link href="#contacts">Contacts</Link>
               </li>
               <li>
                 <StyledButton width="146px" as="a" href="/resume">
@@ -56,11 +55,9 @@ const StyledHeader = styled.header`
 `;
 
 const StyledNav = styled.nav`
-font-family: Roboto;
-font-size: 18px;
-font-weight: 500;
-line-height: 21px;
-
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 21px;
 
   display: flex;
   justify-content: space-between;
@@ -68,11 +65,11 @@ line-height: 21px;
 
   li {
     margin-right: 30px;
-    &:first-child {
-      color: ${myTheme.primary};
-      a:only-child {
-        color: ${myTheme.primary};
-      }
-    }
   }
+`;
+
+const Link = styled.a`
+    &:hover {
+    color: ${myTheme.primary};
+    }
 `;
