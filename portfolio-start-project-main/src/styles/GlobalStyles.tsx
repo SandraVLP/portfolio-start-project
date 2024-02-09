@@ -54,10 +54,10 @@ ul {
   padding: 0;  
 }
 
-li {
+/* li {
 
     &:first-child {
       color: ${myTheme.primary};
     }
-  }
+  } */
   `;

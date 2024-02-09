@@ -9,6 +9,7 @@ import { FlexWrapper } from "../../components/FlexWrapper";
 import { MyTitle } from "../../components/MyTitle";
 import { Container } from "../../components/Container";
 
+
 export function Portfolio() {
   return (
     <section id="works" className="Portfolio">
@@ -16,10 +17,10 @@ export function Portfolio() {
         <FlexWrapper direction="column">
           <MyTitle text="My recent works" />
           <StyledList>
-            <li>All</li>
-            <li>UX/UI Design</li>
-            <li>Web Design</li>
-            <li>Front End Development</li>
+            <li><Link href="#all">All</Link></li>
+            <li><Link href="#uxdes" >UX/UI Design</Link></li>
+            <li><Link href="#webdes">Web Design</Link></li>
+            <li><Link href="#frontend">Front End Development</Link></li>
           </StyledList>
           <FlexWrapper
             wrap="wrap"
@@ -46,7 +47,28 @@ const StyledList = styled.ul`
   li {
     margin-right: 40px;
   }
+
+
+
+  
 `;
+const Link = styled.a `
+font-family: Roboto;
+font-size: 18px;
+font-weight: 500;
+line-height: 30px;
+
+text-decoration: none;
+color: ${myTheme.black.dark};
+
+    &:hover {
+      text-decoration: underline;
+    color: ${myTheme.primary};
+    }
+    
+
+  
+`
 
 const StyledImg = styled.img`
   width: 50%;
