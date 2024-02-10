@@ -55,6 +55,7 @@ p {
 
   @media ${myTheme.media.tablet}{
     font-size: 16px;
+    line-height: 25px;
     }
 
     @media ${myTheme.media.mobile}{

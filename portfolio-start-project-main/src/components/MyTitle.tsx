@@ -20,5 +20,13 @@ font-weight: 700;
 line-height: 30px;
 text-align: ${props =>  props.align || "center"};
 
+@media ${myTheme.media.tablet}{
+    font-size: 30px;
+    }
+
+    @media ${myTheme.media.mobile}{
+      font-size: 25px;
+    }
+
 `
     

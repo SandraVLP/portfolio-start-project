@@ -7,9 +7,8 @@ import { Container } from "../../../components/Container";
 
 export function About() {
   return (
-    <section id="about" className="About">
+    <StyledAbout id="about" className="About">
       <Container>
-        {" "}
         <FlexWrapper
           padding="140px 0 0 0"
           align="flex-start"
@@ -40,13 +39,34 @@ export function About() {
           </FlexWrapper>
         </FlexWrapper>
       </Container>
-    </section>
+    </StyledAbout>
   );
 }
+
+const StyledAbout = styled.section`
+  @media ${myTheme.media.tablet}{
+   ${FlexWrapper}:first-child {
+    gap:30px;
+    padding: 100px 0 0 0;
+   }
+
+   ${FlexWrapper}:nth-child(2) {
+    gap: 10px;
+    padding: 0;
+   }
+  }
+
+  
+
+`
 
 const StyledImg = styled.img`
   max-width: 280px;
   border-radius: 20px;
+
+  @media ${myTheme.media.tablet}{
+    max-width: 200px;
+  }
 
 `;
 
@@ -63,6 +83,13 @@ z-index: 0;
   bottom: -40px;
   right: 50px;
   z-index: -1;
+
+  @media ${myTheme.media.tablet}{
+    width: 200px;
+    height: 300px; 
+    bottom: -20px;
+  right: 30px;
+  }
 
  }
 
