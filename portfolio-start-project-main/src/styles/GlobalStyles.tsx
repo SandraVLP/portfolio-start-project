@@ -32,7 +32,16 @@ h1 {
   font-weight: 700;
   line-height: 70px;
   letter-spacing: 0em;
-  color: ${myTheme.colors.black.dark};      
+  color: ${myTheme.colors.black.dark};
+  
+  @media ${myTheme.media.tablet}{
+    font-size: 40px;
+    line-height: 60px;
+    }
+
+    @media ${myTheme.media.mobile}{
+      font-size: 30px;
+    }
 }
 
 p {
@@ -43,11 +52,22 @@ p {
   line-height: 30px;
   letter-spacing: 0em;
   text-align: left;
+
+  @media ${myTheme.media.tablet}{
+    font-size: 16px;
+    }
+
+    @media ${myTheme.media.mobile}{
+      font-size: 14px;
+    }
 }
 
 section {
   font-family: Roboto;
   padding-bottom: 140px;
+  @media ${myTheme.media.tablet}{
+    padding-bottom: 100px;
+    }
 }
 
 ul {

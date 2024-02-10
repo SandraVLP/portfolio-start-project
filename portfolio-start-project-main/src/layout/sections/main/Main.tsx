@@ -9,7 +9,7 @@ export function Main() {
   return (
     <StyledMain id="main">
       <Container>
-        <FlexWrapper gap="90px" wrap="wrap">
+        <FlexWrapper gap="90px" wrap="wrap" justify="center">
           <StyledInfo className="Info">
             <span>Hello, I’m</span>
             <h1>Fabio Scaletta Web developer</h1>
@@ -29,30 +29,74 @@ export function Main() {
 
 const StyledMain = styled.section`
 display: flex;
-min-height: 100vh;
+/* min-height: 100vh; */
   /* padding-top: 50px;
   padding-bottom: 90px; */
   background-color: ${myTheme.colors.secondary};
+
+  @media ${myTheme.media.tablet}{
+
+    ${FlexWrapper} {
+      flex-direction: column;
+      gap: 30px;
+    }
+
+    ${StyledButton} {
+      align-self: flex-end;
+      width: 160px;
+    }
+  }
 
   span {
     font-size: 30px;
     font-weight: 400;
     line-height: 35px;
     color: ${myTheme.colors.primary};
+
+    @media ${myTheme.media.tablet}{
+      font-size: 20px;
+    }
+
   }
 
   p {
     margin-top: 20px;
     margin-bottom: 30px;
+
+    @media ${myTheme.media.tablet}{
+      margin-top: 10px;
+    margin-bottom: 15px;
+    }
   }
 
   img {
     object-fit: cover;
     max-width: 548px;
     border-radius: 24px;
+
+    @media ${myTheme.media.tablet}{
+      max-width: 450px;
+    }
+
+    @media ${myTheme.media.mobile}{
+      max-width: 350px;
+    }
   }
 `;
 
 const StyledInfo = styled.div`
   max-width: 470px;
+
+
+
+  @media ${myTheme.media.tablet}{
+      display: flex;
+    flex-direction: column;
+    }
+
+
+
+    span {
+      text-align: center;
+    }
 `;
