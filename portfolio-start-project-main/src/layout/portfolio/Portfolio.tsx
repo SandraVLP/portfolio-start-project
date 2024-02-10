@@ -33,7 +33,7 @@ export function Portfolio() {
             <StyledImg src={Puma} alt="Puma"></StyledImg>
             <StyledImg src={Yoga} alt="Yoga"></StyledImg>
           </FlexWrapper>
-          <StyledButton color={myTheme.white} width="214px">
+          <StyledButton color={myTheme.colors.white} width="214px">
             See more
           </StyledButton>
         </FlexWrapper>
@@ -60,7 +60,7 @@ line-height: 30px;
 
     &:hover {
       text-decoration: underline;
-    color: ${myTheme.primary};
+    color: ${myTheme.colors.primary};
     }
     
 
@@ -71,6 +71,6 @@ const StyledImg = styled.img`
   width: 50%;
   max-width: 545px;
   max-height: 350px;
-  border: solid 1px ${myTheme.grey};
+  border: solid 1px ${myTheme.colors.grey};
   border-radius: 36px;
 `;

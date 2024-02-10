@@ -13,7 +13,7 @@ export const MyTitle = (props:TitlePropsType) => {
 }
 
 const StyledTitle = styled.h2<TitlePropsType>`
-  color:${myTheme.primary};
+  color:${myTheme.colors.primary};
   font-family: Roboto;
 font-size: 40px;
 font-weight: 700;

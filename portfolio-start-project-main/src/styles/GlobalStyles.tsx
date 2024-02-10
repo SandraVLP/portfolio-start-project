@@ -11,7 +11,7 @@ export const GlobalStyles = createGlobalStyle`
     }
 
     *:focus-visible{
- outline: 3px auto ${myTheme.secondary};;
+ outline: 3px auto ${myTheme.colors.secondary};;
     }
 
     body {
@@ -32,11 +32,11 @@ h1 {
   font-weight: 700;
   line-height: 70px;
   letter-spacing: 0em;
-  color: ${myTheme.black.dark};      
+  color: ${myTheme.colors.black.dark};      
 }
 
 p {
-  color: ${myTheme.black.light};
+  color: ${myTheme.colors.black.light};
   font-family: Roboto;
   font-size: 18px;
   font-weight: 400;
@@ -63,6 +63,6 @@ a {
   text-decoration: none;
 
 text-decoration: none;
-color: ${myTheme.black.dark};
+color: ${myTheme.colors.black.dark};
 }
   `;

@@ -55,8 +55,8 @@ export function Contacts() {
             <StyledButton
               width={"180px"}
               type="submit"
-              color={myTheme.primary}
-              bgcolor={myTheme.white}
+              color={myTheme.colors.primary}
+              bgcolor={myTheme.colors.white}
             >
               Submit
             </StyledButton>
@@ -68,7 +68,7 @@ export function Contacts() {
 }
 
 const StyledForm = styled.form`
-  color: ${myTheme.white};
+  color: ${myTheme.colors.white};
   margin-top: 70px;
   width: 100%;
   display: flex;
@@ -78,7 +78,7 @@ const StyledForm = styled.form`
   box-shadow: 0px 4px 25px 0px rgba(0, 0, 0, 0.25);
   border-radius: 20px;
   padding: 50px;
-  background-color: ${myTheme.primary};
+  background-color: ${myTheme.colors.primary};
 
   label {
     width: 50%;
@@ -104,16 +104,16 @@ const StyledForm = styled.form`
 const Field = styled.input`
   font-family: Roboto;
   border-radius: 5px;
-  border: solid 2px ${myTheme.grey};
+  border: solid 2px ${myTheme.colors.grey};
   width: 60%;
   padding: 7px 15px;
 
   &::placeholder {
-    color: ${myTheme.black.light};
+    color: ${myTheme.colors.black.light};
   }
 
   &:focus-visible {
-    outline: 3px auto ${myTheme.secondary};
+    outline: 3px auto ${myTheme.colors.secondary};
   }
 `;
 
@@ -121,8 +121,8 @@ const Title = styled.h2`
   font-size: 40px;
   font-weight: 700;
   line-height: 30px;
-  background-color: ${myTheme.primary};
-  color: ${myTheme.white};
+  background-color: ${myTheme.colors.primary};
+  color: ${myTheme.colors.white};
   text-align: center;
   margin-bottom: 40px;
 `;

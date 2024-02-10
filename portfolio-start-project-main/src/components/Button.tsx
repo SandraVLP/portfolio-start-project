@@ -10,7 +10,7 @@ type StyleBtnPropsType = {
 export const StyledButton = styled.button<StyleBtnPropsType>`
   width: ${(props) => props.width};
   height: 54px;
-  color: ${(props) => props.color || myTheme.black.dark};
+  color: ${(props) => props.color || myTheme.colors.black.dark};
   font-family: Roboto;
   font-size: 18px;
   font-weight: 500;
@@ -19,7 +19,7 @@ export const StyledButton = styled.button<StyleBtnPropsType>`
   border-radius: 50px;
   gap: 10px;
   border: none;
-  background-color:${(props) => props.bgcolor || myTheme.primary};
+  background-color:${(props) => props.bgcolor || myTheme.colors.primary};
   cursor: pointer;
   text-decoration: none;
 

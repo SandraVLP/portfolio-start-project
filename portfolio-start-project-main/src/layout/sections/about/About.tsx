@@ -55,7 +55,7 @@ position: relative;
 z-index: 0;
  &::before {
   content: "";
-  border: solid 3px ${myTheme.primary};
+  border: solid 3px ${myTheme.colors.primary};
   width: 280px;
   height: 420px; 
   border-radius: 20px;

@@ -58,12 +58,12 @@ export function Footer() {
 const StyledFooter = styled.footer`
   height: 35vh;
   padding: 60px 0;
-  background-color: ${myTheme.secondary};
+  background-color: ${myTheme.colors.secondary};
 `;
 
 const SocialLink = styled.a`
-color: ${myTheme.primary};
-border: 2px solid ${myTheme.primary};
+color: ${myTheme.colors.primary};
+border: 2px solid ${myTheme.colors.primary};
 border-radius: 5px;
 width: 35px;
 height: 35px;
@@ -73,8 +73,8 @@ align-items: center;
 
 &:hover {
   cursor: pointer;
-  color: ${myTheme.black.light};
-border: 2px solid ${myTheme.black.light};
+  color: ${myTheme.colors.black.light};
+border: 2px solid ${myTheme.colors.black.light};
 transform: translateY(-4px);
 }
 `;

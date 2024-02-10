@@ -9,7 +9,7 @@ export function Header() {
   return (
     <StyledHeader id="home">
       <Container>
-        <FlexWrapper>
+        <FlexWrapper wrap="wrap">
           <Logo />
           <StyledNav>
             <ul>
@@ -45,9 +45,9 @@ export function Header() {
 }
 
 const StyledHeader = styled.header`
-  background-color: ${myTheme.secondary};
+  background-color: ${myTheme.colors.secondary};
   padding: 15px 0;
-  position: fixed;
+  /* position: fixed; */
   top: 0;
   right: 0;
   left: 0;
@@ -65,11 +65,15 @@ const StyledNav = styled.nav`
 
   li {
     margin-right: 30px;
+
+    &:last-child{
+      margin: 0;
+    }
   }
 `;
 
 const Link = styled.a`
     &:hover {
-    color: ${myTheme.primary};
+    color: ${myTheme.colors.primary};
     }
 `;

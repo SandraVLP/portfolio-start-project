@@ -9,7 +9,7 @@ export function Main() {
   return (
     <StyledMain id="main">
       <Container>
-        <FlexWrapper gap="90px">
+        <FlexWrapper gap="90px" wrap="wrap">
           <StyledInfo className="Info">
             <span>Hello, I’m</span>
             <h1>Fabio Scaletta Web developer</h1>
@@ -32,13 +32,13 @@ display: flex;
 min-height: 100vh;
   /* padding-top: 50px;
   padding-bottom: 90px; */
-  background-color: ${myTheme.secondary};
+  background-color: ${myTheme.colors.secondary};
 
   span {
     font-size: 30px;
     font-weight: 400;
     line-height: 35px;
-    color: ${myTheme.primary};
+    color: ${myTheme.colors.primary};
   }
 
   p {
@@ -47,9 +47,8 @@ min-height: 100vh;
   }
 
   img {
-    object-fit: contain;
+    object-fit: cover;
     max-width: 548px;
-    height: auto;
     border-radius: 24px;
   }
 `;

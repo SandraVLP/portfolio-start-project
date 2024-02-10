@@ -24,7 +24,7 @@ export const Service = (props: ServicePropsType) => {
 
 const StyledDescription = styled.div`
   width: 100%;
-  border: solid 1px ${myTheme.grey};
+  border: solid 1px ${myTheme.colors.grey};
   border-radius: 30px;
   position: relative;
   padding: 50px;
