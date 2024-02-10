@@ -53,7 +53,6 @@ export function Contacts() {
               ></Field>
             </label>
             <StyledButton
-              width={"180px"}
               type="submit"
               color={myTheme.colors.primary}
               bgcolor={myTheme.colors.white}

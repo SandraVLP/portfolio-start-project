@@ -33,7 +33,7 @@ export function Portfolio() {
             <StyledImg src={Puma} alt="Puma"></StyledImg>
             <StyledImg src={Yoga} alt="Yoga"></StyledImg>
           </FlexWrapper>
-          <StyledButton color={myTheme.colors.white} width="214px">
+          <StyledButton color={myTheme.colors.white}>
             See more
           </StyledButton>
         </FlexWrapper>
