@@ -43,6 +43,11 @@ const Menu = styled.nav`
   justify-content: space-between;
   align-items: center;
 
+
+  @media ${myTheme.media.mobile} {
+    display: none;
+  }
+
   li {
     margin-right: 30px;
 

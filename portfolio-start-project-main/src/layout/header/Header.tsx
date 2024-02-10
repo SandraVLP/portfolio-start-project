@@ -4,6 +4,7 @@ import { Logo } from "../../components/Logo";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { DekstopMenu } from "./dekstopMenu/DekstopMenu";
+import { MobileMenu } from "./mobileMenu/MobileMenu";
 
 export function Header() {
   return (
@@ -12,6 +13,7 @@ export function Header() {
         <FlexWrapper wrap="wrap">
           <Logo />
           <DekstopMenu/>
+          <MobileMenu/>
         </FlexWrapper>
       </Container>
     </StyledHeader>
