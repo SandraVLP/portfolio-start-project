@@ -8,7 +8,7 @@ export const MobileMenu = () => {
       <BurgerButton isOpen={false}>
         <span></span>
       </BurgerButton>
-      <MobileMenuPopup isOpen={true}>
+      <MobileMenuPopup isOpen={false}>
         <ul>
           <li>
             <Link href="#home">Home</Link>
