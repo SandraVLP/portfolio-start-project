@@ -19,7 +19,7 @@ export const GlobalStyles = createGlobalStyle`
   font-family: 'Roboto', 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-    line-height: 1.2;
+    line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 
@@ -53,6 +53,10 @@ h3 {
 
 font-size: calc((100vw - 360px) /  (1440 - 360) * (35 - 30) + 30px);
 font-weight: 700;
+line-height: 45px;
+@media ${myTheme.media.tablet}{
+  line-height: 35px;
+}
 
 }
 

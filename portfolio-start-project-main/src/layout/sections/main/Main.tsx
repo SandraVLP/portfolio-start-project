@@ -48,6 +48,7 @@ display: flex;
   }
 
   span {
+    font-size: calc((100vw - 360px) /  (1440 - 360) * (30 - 25) + 25px);
     font-weight: 400;
     color: ${myTheme.colors.primary};
 

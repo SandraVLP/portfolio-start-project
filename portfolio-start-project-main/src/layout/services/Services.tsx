@@ -93,6 +93,8 @@ const StyledList = styled.div`
   }
 
   p {
+    font-size:calc((100vw - 360px) /  (1440 - 360) * (20 - 16) + 16px);
+    font-weight: 500;
     margin-left: 30px;
   }
 `;

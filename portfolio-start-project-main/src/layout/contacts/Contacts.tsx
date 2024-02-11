@@ -80,6 +80,9 @@ const StyledForm = styled.form`
   background-color: ${myTheme.colors.primary};
 
   label {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: calc((100vw - 360px) /  (1440 - 360) * (30 - 25) + 25px);
     width: 50%;
     display: flex;
     justify-content: space-between;
@@ -97,6 +100,8 @@ const StyledForm = styled.form`
 `;
 
 const Field = styled.input`
+font-family: Roboto, sans-serif;
+font-size: calc((100vw - 360px) /  (1440 - 360) * (16 - 14) + 14px);
   border-radius: 5px;
   border: solid 2px ${myTheme.colors.grey};
   width: 60%;

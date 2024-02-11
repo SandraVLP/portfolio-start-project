@@ -41,9 +41,19 @@ const StyledDescription = styled.div`
     max-width: 380px;
   }
 
+  p {
+    font-weight: 400;
+    font-size: calc((100vw - 360px) /  (1440 - 360) * (16 - 14) + 14px);
+  }
+
   svg {
     margin-left: 25px;
   }
+  a {
+    font-weight: 500;
+    font-size: calc((100vw - 360px) /  (1440 - 360) * (20 - 16) + 16px);
+}
+
 `;
 
 const StyledImg = styled.img`
