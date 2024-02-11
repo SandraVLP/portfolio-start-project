@@ -9,6 +9,7 @@ import { FlexWrapper } from "../../components/FlexWrapper";
 import { Service } from "./service/Service";
 import { MyTitle } from "../../components/MyTitle";
 import { Container } from "../../components/Container";
+import { myTheme } from "../../styles/Theme";
 
 export function Services() {
   return (
@@ -64,17 +65,43 @@ const StyledList = styled.div`
   margin-top: 90px;
   display: flex;
 
+  @media ${myTheme.media.mobile} {
+
+flex-direction: column;
+gap: 20px;
+
+}
+
   div {
     display: flex;
     align-items: center;
     max-width: 300px;
     margin-right: 30px;
 
+    @media ${myTheme.media.tablet} {
+
+      margin-right: 10px;
+
+}
+
+
     img {
       width: 120px;
       border-radius: 20px;
       padding: 25px;
       background-color: rgba(45, 76, 255, 0.13);
+
+@media ${myTheme.media.tablet} {
+
+  width: 90px;
+  
+}
+@media ${myTheme.media.mobile} {
+
+width: 120px;
+
+}
+
     }
 
     &:first-child {
@@ -96,5 +123,13 @@ const StyledList = styled.div`
     font-size:calc((100vw - 360px) /  (1440 - 360) * (20 - 16) + 16px);
     font-weight: 500;
     margin-left: 30px;
+
+    @media ${myTheme.media.tablet} {
+
+margin-left: 10px;
+
+}
+
+    
   }
 `;
