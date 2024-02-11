@@ -56,9 +56,16 @@ export function Footer() {
 }
 
 const StyledFooter = styled.footer`
-  height: 35vh;
+  height: 25vh;
   padding: 60px 0;
   background-color: ${myTheme.colors.secondary};
+
+small {
+  font-weight: 500;
+  font-size: calc((100vw - 360px) /  (1440 - 360) * (18 - 14) + 14px);
+}
+
+
 `;
 
 const SocialLink = styled.a`

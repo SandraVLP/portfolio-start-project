@@ -90,6 +90,7 @@ const StyledForm = styled.form`
   }
 
   ${StyledButton} {
+    font-size: calc((100vw - 360px) /  (1440 - 360) * (25 - 20) + 20px);
     margin-top: 20px;
   }
 

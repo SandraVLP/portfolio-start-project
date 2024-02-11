@@ -53,6 +53,8 @@ const StyledList = styled.ul`
   
 `;
 const Link = styled.a `
+font-weight: 500;
+font-size: calc((100vw - 360px) /  (1440 - 360) * (18 - 14) + 14px);
 
 
     &:hover {
