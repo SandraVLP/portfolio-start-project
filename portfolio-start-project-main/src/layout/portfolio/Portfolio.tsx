@@ -53,9 +53,6 @@ const StyledList = styled.ul`
   
 `;
 const Link = styled.a `
-font-size: 18px;
-font-weight: 500;
-line-height: 30px;
 
 
     &:hover {

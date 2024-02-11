@@ -30,8 +30,8 @@ export function Main() {
 const StyledMain = styled.section`
 display: flex;
 /* min-height: 100vh; */
-  /* padding-top: 50px;
-  padding-bottom: 90px; */
+  padding-top: 50px;
+  padding-bottom: 90px;
   background-color: ${myTheme.colors.secondary};
 
   @media ${myTheme.media.tablet}{
@@ -48,14 +48,9 @@ display: flex;
   }
 
   span {
-    font-size: 30px;
     font-weight: 400;
-    line-height: 35px;
     color: ${myTheme.colors.primary};
 
-    @media ${myTheme.media.tablet}{
-      font-size: 20px;
-    }
 
   }
 

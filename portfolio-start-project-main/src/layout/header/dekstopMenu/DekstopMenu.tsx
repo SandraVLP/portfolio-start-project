@@ -35,10 +35,7 @@ export const DekstopMenu = () => {
 };
 
 const Menu = styled.nav`
-  font-size: 18px;
   font-weight: 500;
-  line-height: 21px;
-
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -59,12 +56,10 @@ const Menu = styled.nav`
     }
   }
 
-  @media ${myTheme.media.tablet} {
-    font-size: 16px;
-  }
 `;
 
 const Link = styled.a`
+font-size: calc((100vw - 360px) /  (1440 - 360) * (18 - 14) + 14px);
   &:hover {
     color: ${myTheme.colors.primary};
   }

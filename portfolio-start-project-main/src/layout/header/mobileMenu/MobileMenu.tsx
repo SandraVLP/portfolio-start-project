@@ -45,9 +45,7 @@ const Menu = styled.nav`
   @media ${myTheme.media.mobile} {
     display: block;
   }
-  font-size: 18px;
   font-weight: 500;
-  line-height: 21px;
 
   li {
     margin-right: 30px;
@@ -60,9 +58,7 @@ const Menu = styled.nav`
     }
   }
 
-  @media ${myTheme.media.tablet} {
-    font-size: 16px;
-  }
+
 `;
 
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
@@ -93,6 +89,8 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
 `;
 
 const Link = styled.a`
+font-size: calc((100vw - 360px) /  (1440 - 360) * (18 - 14) + 14px);
+font-weight: 500;
   &:hover {
     color: ${myTheme.colors.primary};
   }

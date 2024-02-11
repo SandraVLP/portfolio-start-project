@@ -14,19 +14,7 @@ export const MyTitle = (props:TitlePropsType) => {
 
 const StyledTitle = styled.h2<TitlePropsType>`
   color:${myTheme.colors.primary};
-  font-family: Roboto;
-font-size: 40px;
-font-weight: 700;
-line-height: 30px;
 text-align: ${props =>  props.align || "center"};
-
-@media ${myTheme.media.tablet}{
-    font-size: 30px;
-    }
-
-    @media ${myTheme.media.mobile}{
-      font-size: 25px;
-    }
 
 `
     

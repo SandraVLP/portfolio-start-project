@@ -81,10 +81,6 @@ const StyledForm = styled.form`
 
   label {
     width: 50%;
-    font-size: 25px;
-    font-weight: 500;
-    line-height: 30px;
-
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
@@ -101,7 +97,6 @@ const StyledForm = styled.form`
 `;
 
 const Field = styled.input`
-  font-family: Roboto;
   border-radius: 5px;
   border: solid 2px ${myTheme.colors.grey};
   width: 60%;
@@ -117,9 +112,6 @@ const Field = styled.input`
 `;
 
 const Title = styled.h2`
-  font-size: 40px;
-  font-weight: 700;
-  line-height: 30px;
   background-color: ${myTheme.colors.primary};
   color: ${myTheme.colors.white};
   text-align: center;
