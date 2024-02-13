@@ -30,7 +30,6 @@ export function Footer() {
                 viewbox="0 0 21px 21px"
               ></Icon>
             </SocialLink>
-            {/* <img src={Tele}></img> */}
             <SocialLink>
               <Icon
               aria-label={"Vkontakte"}

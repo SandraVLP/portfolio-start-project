@@ -13,7 +13,7 @@ import { myTheme } from "../../styles/Theme";
 
 export function Services() {
   return (
-    <section id="service" className="services">
+    <StyledSection id="service" className="services">
       <Container>
         <FlexWrapper direction="column">
           <MyTitle text="What I do" />
@@ -56,13 +56,26 @@ export function Services() {
           </FlexWrapper>
         </FlexWrapper>
       </Container>
-    </section>
+    </StyledSection>
   );
 }
 
+const StyledSection = styled.section`
+  ${FlexWrapper} {
+
+${FlexWrapper} {
+div {
+  &:last-child {
+
+        margin-bottom: 0;
+      }
+}
+    }
+    }
+`
+
 const StyledList = styled.div`
   margin-bottom: 120px;
-  margin-top: 90px;
   display: flex;
 
   @media ${myTheme.media.mobile} {

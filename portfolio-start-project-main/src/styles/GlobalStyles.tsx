@@ -46,6 +46,12 @@ h1 {
 h2 {
   font-size: calc((100vw - 360px) /  (1440 - 360) * (40 - 30) + 30px);
   font-weight: 700;
+  margin-bottom: 80px;
+
+  @media ${myTheme.media.tablet} {
+    margin-bottom: 40px;
+    
+  }
 
 }
 

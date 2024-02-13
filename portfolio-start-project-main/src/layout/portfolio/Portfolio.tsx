@@ -43,7 +43,6 @@ export function Portfolio() {
 }
 
 const StyledList = styled.ul`
-  margin-top: 75px;
   li {
     margin-right: 40px;
   }

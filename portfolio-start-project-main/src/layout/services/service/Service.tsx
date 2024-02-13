@@ -36,6 +36,7 @@ const StyledDescription = styled.div`
   height: 400px;
   display: flex;
   gap:80px;
+  
 
   @media ${myTheme.media.tablet} {
     padding: 30px;
