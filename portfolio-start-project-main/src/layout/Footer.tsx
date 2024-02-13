@@ -16,18 +16,18 @@ export function Footer() {
               <Icon
               aria-label={"Linkedin"}
                 iconId="in"
-                width="17px"
-                height="17px"
-                viewbox="0 0 17px 17px"
+                width="21px"
+                height="21px"
+                viewbox="0 0 21px 21px"
               ></Icon>
             </SocialLink>
             <SocialLink>
               <Icon
               aria-label={"Telegram"}
                 iconId="tg"
-                width="17px"
-                height="17px"
-                viewbox="0 0 17px 17px"
+                width="21px"
+                height="21px"
+                viewbox="0 0 21px 21px"
               ></Icon>
             </SocialLink>
             {/* <img src={Tele}></img> */}
@@ -35,9 +35,9 @@ export function Footer() {
               <Icon
               aria-label={"Vkontakte"}
                 iconId="vk"
-                width="17px"
-                height="17px"
-                viewbox="0 0 17px 17px"
+                width="21px"
+                height="21px"
+                viewbox="0 0 21px 21px"
               ></Icon>
             </SocialLink>
             <SocialLink>
