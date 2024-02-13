@@ -4,7 +4,7 @@ import { StyledButton } from "../../components/Button";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
 
-export function Contacts() {
+export const Contacts: React.FC =() => {
   return (
     <StyledContacts id="contacts" className="contacts">
       <Container>

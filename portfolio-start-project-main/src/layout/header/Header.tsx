@@ -1,34 +1,22 @@
-import styled from "styled-components";
-import { myTheme } from "../../styles/Theme";
+import React from "react";
 import { Logo } from "../../components/Logo";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { DekstopMenu } from "./dekstopMenu/DekstopMenu";
 import { MobileMenu } from "./mobileMenu/MobileMenu";
 
-export function Header() {
+import { S } from "./Header_styles";
+
+export const Header: React.FC = () => {
   return (
-    <StyledHeader id="home">
+    <S.Header id="home">
       <Container>
         <FlexWrapper wrap="wrap">
           <Logo />
-          <DekstopMenu/>
-          <MobileMenu/>
+          <DekstopMenu />
+          <MobileMenu />
         </FlexWrapper>
       </Container>
-    </StyledHeader>
+    </S.Header>
   );
-}
-
-const StyledHeader = styled.header`
-  background-color: ${myTheme.colors.secondary};
-  padding: 15px 0;
-  position: sticky;
-  top: 0;
-  right: 0;
-  left: 0;
-  z-index: 5;
-
-`;
-
-
+};
