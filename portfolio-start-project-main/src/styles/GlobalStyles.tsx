@@ -22,7 +22,7 @@ export const GlobalStyles = createGlobalStyle`
     line-height: 1.65;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-
+      min-width: 360px;
   
 }
 
