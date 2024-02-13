@@ -83,10 +83,15 @@ const StyledForm = styled.form`
     
   }
 
+  @media ${myTheme.media.mobile} {
+    padding: 20px;
+    
+  }
+
   label {
     font-family: Roboto, sans-serif;
     font-weight: 500;
-    font-size: calc((100vw - 360px) / (1440 - 360) * (30 - 25) + 25px);
+    font-size: calc((100vw - 360px) / (1440 - 360) * (30 - 20) + 20px);
     width: 70%;
     display: flex;
     justify-content: space-between;
@@ -94,6 +99,12 @@ const StyledForm = styled.form`
 
     @media ${myTheme.media.tablet} {
     width: 90%;
+    }
+
+    @media ${myTheme.media.mobile} {
+    width: 100%;
+    flex-direction: column;
+    align-items: flex-start;
   }
   }
 
@@ -123,6 +134,10 @@ const Field = styled.input`
   &:focus-visible {
     outline: 3px auto ${myTheme.colors.secondary};
   }
+
+  @media ${myTheme.media.mobile} {
+    width: 100%;
+  }
 `;
 
 const Title = styled.h2`
@@ -130,6 +145,10 @@ const Title = styled.h2`
   color: ${myTheme.colors.white};
   text-align: center;
   margin-bottom: 40px;
+
+  @media ${myTheme.media.mobile} {
+margin-bottom: 0;
+  }
 `;
 
 const StyledContacts = styled.section`
