@@ -9,7 +9,6 @@ export function Contacts() {
     <StyledContacts id="contacts" className="contacts">
       <Container>
         <FlexWrapper direction="column" justify="center">
-          {" "}
           <StyledForm>
             <Title> Contact me</Title>
             <label htmlFor="name" aria-labelledby="name">
@@ -20,7 +19,7 @@ export function Contacts() {
                 type="text"
                 name="name"
                 placeholder="Name"
-              ></Field>{" "}
+              ></Field>
             </label>
             <label htmlFor="email" aria-labelledby="email">
               Email:
@@ -79,18 +78,27 @@ const StyledForm = styled.form`
   padding: 50px;
   background-color: ${myTheme.colors.primary};
 
+  @media ${myTheme.media.tablet} {
+    padding: 30px;
+    
+  }
+
   label {
     font-family: Roboto, sans-serif;
     font-weight: 500;
-    font-size: calc((100vw - 360px) /  (1440 - 360) * (30 - 25) + 25px);
-    width: 50%;
+    font-size: calc((100vw - 360px) / (1440 - 360) * (30 - 25) + 25px);
+    width: 70%;
     display: flex;
     justify-content: space-between;
     margin-bottom: 15px;
+
+    @media ${myTheme.media.tablet} {
+    width: 90%;
+  }
   }
 
   ${StyledButton} {
-    font-size: calc((100vw - 360px) /  (1440 - 360) * (25 - 20) + 20px);
+    font-size: calc((100vw - 360px) / (1440 - 360) * (25 - 20) + 20px);
     margin-top: 20px;
   }
 
@@ -101,8 +109,8 @@ const StyledForm = styled.form`
 `;
 
 const Field = styled.input`
-font-family: Roboto, sans-serif;
-font-size: calc((100vw - 360px) /  (1440 - 360) * (16 - 14) + 14px);
+  font-family: Roboto, sans-serif;
+  font-size: calc((100vw - 360px) / (1440 - 360) * (16 - 14) + 14px);
   border-radius: 5px;
   border: solid 2px ${myTheme.colors.grey};
   width: 60%;
@@ -125,6 +133,6 @@ const Title = styled.h2`
 `;
 
 const StyledContacts = styled.section`
-padding: 0;
+  padding: 0;
   margin-bottom: -45px;
-`
+`;
