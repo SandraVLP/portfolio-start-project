@@ -55,12 +55,25 @@ const StyledList = styled.ul`
       margin-right: 0;
 
     }
+    @media ${myTheme.media.mobile} {
+    margin: 0;
+width: 50%;
+      text-align: center;
+    }
   }
 
   margin-bottom: 95px;
 
   @media ${myTheme.media.tablet} {
+
     margin-bottom: 40px;
+    
+  }
+
+  @media ${myTheme.media.mobile} {
+    
+  display: flex;
+  flex-wrap: wrap;
     
   }
 `;
