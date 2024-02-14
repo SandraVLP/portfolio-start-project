@@ -1,16 +1,16 @@
-import styled from "styled-components";
 import MainFoto from "../../../assets/images/foto-main.jpg";
-import { myTheme } from "../../../styles/Theme";
 import { StyledButton } from "../../../components/Button";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Container } from "../../../components/Container";
+import {S} from "./Main_styles"
+import React from "react";
 
-export function Main() {
+export const Main: React.FC = () => {
   return (
-    <StyledMain id="main">
+    <S.Main id="main">
       <Container>
         <FlexWrapper gap="90px" wrap="wrap" justify="center">
-          <StyledInfo className="Info">
+          <S.Info className="Info">
             <span>Hello, I’m</span>
             <h1>Fabio Scaletta Web developer</h1>
             <p>
@@ -19,80 +19,80 @@ export function Main() {
               building stuff.
             </p>
             <StyledButton>Send Email</StyledButton>
-          </StyledInfo>
+          </S.Info>
           <img src={MainFoto} alt="Main Foto"></img>
         </FlexWrapper>
       </Container>
-    </StyledMain>
+    </S.Main>
   );
 }
 
-const StyledMain = styled.section`
-display: flex;
-/* min-height: 100vh; */
-  padding-top: 50px;
-  padding-bottom: 90px;
-  background-color: ${myTheme.colors.secondary};
+// const StyledMain = styled.section`
+// display: flex;
+// /* min-height: 100vh; */
+//   padding-top: 50px;
+//   padding-bottom: 90px;
+//   background-color: ${myTheme.colors.secondary};
 
-  @media ${myTheme.media.tablet}{
+//   @media ${myTheme.media.tablet}{
 
-    ${FlexWrapper} {
-      flex-direction: column;
-      gap: 30px;
-    }
+//     ${FlexWrapper} {
+//       flex-direction: column;
+//       gap: 30px;
+//     }
 
-    ${StyledButton} {
-      align-self: flex-end;
-      width: 160px;
-    }
-  }
+//     ${StyledButton} {
+//       align-self: flex-end;
+//       width: 160px;
+//     }
+//   }
 
-  span {
-    font-size: calc((100vw - 360px) /  (1440 - 360) * (30 - 25) + 25px);
-    font-weight: 400;
-    color: ${myTheme.colors.primary};
-
-
-  }
-
-  p {
-    margin-top: 20px;
-    margin-bottom: 30px;
-
-    @media ${myTheme.media.tablet}{
-      margin-top: 10px;
-    margin-bottom: 15px;
-    }
-  }
-
-  img {
-    object-fit: cover;
-    max-width: 548px;
-    border-radius: 24px;
-
-    @media ${myTheme.media.tablet}{
-      max-width: 450px;
-    }
-
-    @media ${myTheme.media.mobile}{
-      max-width: 350px;
-    }
-  }
-`;
-
-const StyledInfo = styled.div`
-  max-width: 470px;
+//   span {
+//     font-size: calc((100vw - 360px) /  (1440 - 360) * (30 - 25) + 25px);
+//     font-weight: 400;
+//     color: ${myTheme.colors.primary};
 
 
+//   }
 
-  @media ${myTheme.media.tablet}{
-      display: flex;
-    flex-direction: column;
-    }
+//   p {
+//     margin-top: 20px;
+//     margin-bottom: 30px;
+
+//     @media ${myTheme.media.tablet}{
+//       margin-top: 10px;
+//     margin-bottom: 15px;
+//     }
+//   }
+
+//   img {
+//     object-fit: cover;
+//     max-width: 548px;
+//     border-radius: 24px;
+
+//     @media ${myTheme.media.tablet}{
+//       max-width: 450px;
+//     }
+
+//     @media ${myTheme.media.mobile}{
+//       max-width: 350px;
+//     }
+//   }
+// `;
+
+// const StyledInfo = styled.div`
+//   max-width: 470px;
 
 
 
-    span {
-      text-align: center;
-    }
-`;
+//   @media ${myTheme.media.tablet}{
+//       display: flex;
+//     flex-direction: column;
+//     }
+
+
+
+//     span {
+//       text-align: center;
+//     }
+// `;
