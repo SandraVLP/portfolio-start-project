@@ -2,8 +2,9 @@ import { Icon } from "../../../components/Icon";
 import { MyTitle } from "../../../components/MyTitle";
 import { Container } from "../../../components/Container";
 import { S } from "./Skills_styles";
+import React from "react";
 
-export function Skills() {
+export const Skills: React.FC = () => {
   return (
     <section id="skills" className="Skills">
       <Container>

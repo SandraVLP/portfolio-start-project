@@ -3,6 +3,7 @@ import { StyledButton } from "../../components/Button";
 import { Container } from "../../components/Container";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { S } from "./Contacts_styles";
+import React from "react";
 
 export const Contacts: React.FC =() => {
   return (

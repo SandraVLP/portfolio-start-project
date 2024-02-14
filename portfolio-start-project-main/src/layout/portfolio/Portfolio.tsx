@@ -8,8 +8,9 @@ import { FlexWrapper } from "../../components/FlexWrapper";
 import { MyTitle } from "../../components/MyTitle";
 import { Container } from "../../components/Container";
 import { S } from "./Portfolio_styles";
+import React from "react";
 
-export function Portfolio() {
+export const Portfolio: React.FC = () => {
   return (
     <section id="works" className="Portfolio">
       <Container>

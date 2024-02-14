@@ -1,8 +1,9 @@
 import styled from "styled-components";
 import { myTheme } from "../../../styles/Theme";
 import { StyledButton } from "../../../components/Button";
+import React from "react";
 
-export const MenuList = () => {
+export const MenuList: React.FC = () => {
   return (
       <StyledUl>
         <li>

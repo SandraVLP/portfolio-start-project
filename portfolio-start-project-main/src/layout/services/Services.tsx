@@ -9,8 +9,9 @@ import { Service } from "./service/Service";
 import { MyTitle } from "../../components/MyTitle";
 import { Container } from "../../components/Container";
 import { S } from "./Services_styles";
+import React from "react";
 
-export function Services() {
+export const Services: React.FC = () => {
   return (
     <S.Services id="service" className="services">
       <Container>

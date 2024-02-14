@@ -5,7 +5,7 @@ import { MenuList } from "../menu/Menu";
 export const MobileMenu: React.FC = () => {
   return (
     <S.Menu>
-      <S.BurgerButton isOpen={false}>
+      <S.BurgerButton isOpen={true}>
         <span></span>
       </S.BurgerButton>
       <S.MobileMenuPopup isOpen={false}>

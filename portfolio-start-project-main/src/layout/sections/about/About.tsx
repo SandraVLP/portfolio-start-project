@@ -3,9 +3,11 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 import { MyTitle } from "../../../components/MyTitle";
 import { Container } from "../../../components/Container";
 import { S } from "./About_styles";
+import FotoAboutBig from "../../../assets/images/aboutphoto@2.jpg"
+import React from "react";
 
 
-export function About() {
+export const About: React.FC = () => {
   return (
     <S.About id="about" className="About">
       <Container>
@@ -16,7 +18,7 @@ export function About() {
           gap="160px"
         >
           <S.Photowrapper className="foto-container">
-            <S.Image src={FotoAbout} alt="Foto about"></S.Image>
+            <S.Image src={FotoAbout} srcSet={`${FotoAboutBig} 2x`} alt="Foto about"></S.Image>
           </S.Photowrapper>
           <FlexWrapper
             direction="column"

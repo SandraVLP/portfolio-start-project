@@ -8,13 +8,22 @@ import { MobileMenu } from "./mobileMenu/MobileMenu";
 import { S } from "./Header_styles";
 
 export const Header: React.FC = () => {
+const [width, setWidth] = React.useState(window.innerWidth);
+const breakpoint = 576;
+
+React.useEffect(() => {
+  const HandleWindowResize = () => setWidth(window.innerWidth)
+  window.addEventListener("resize", HandleWindowResize);
+  return() => window.removeEventListener("resize", HandleWindowResize)
+}, [])
+
+
   return (
     <S.Header id="home">
       <Container>
         <FlexWrapper wrap="wrap">
           <Logo />
-          <DekstopMenu />
-          <MobileMenu />
+          {width < breakpoint ? <MobileMenu />  :  <DekstopMenu />}
         </FlexWrapper>
       </Container>
     </S.Header>

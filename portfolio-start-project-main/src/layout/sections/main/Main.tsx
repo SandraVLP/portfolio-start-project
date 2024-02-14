@@ -1,4 +1,5 @@
 import MainFoto from "../../../assets/images/foto-main.jpg";
+import MainBigFoto from "../../../assets/images/MainPhoto@2.jpg";
 import { StyledButton } from "../../../components/Button";
 import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Container } from "../../../components/Container";
@@ -20,7 +21,7 @@ export const Main: React.FC = () => {
             </p>
             <StyledButton>Send Email</StyledButton>
           </S.Info>
-          <img src={MainFoto} alt="Main Foto"></img>
+          <img src={MainFoto} srcSet={`${MainBigFoto} 2x`} alt="Main Foto"></img>
         </FlexWrapper>
       </Container>
     </S.Main>

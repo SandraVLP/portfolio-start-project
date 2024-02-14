@@ -2,8 +2,9 @@ import { Icon } from "../../components/Icon";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { Container } from "../../components/Container";
 import { S } from "./Footer_styles";
+import React from "react";
 
-export function Footer() {
+export const Footer: React.FC = () => {
   return (
     <S.Footer>
       <Container>
