@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import Fitness from "../../assets/images/fitness.png";
 import Puma from "../../assets/images/puma.png";
 import Sight from "../../assets/images/sight.jpeg";
@@ -8,6 +7,7 @@ import { StyledButton } from "../../components/Button";
 import { FlexWrapper } from "../../components/FlexWrapper";
 import { MyTitle } from "../../components/MyTitle";
 import { Container } from "../../components/Container";
+import { S } from "./Portfolio_styles";
 
 export function Portfolio() {
   return (
@@ -15,30 +15,30 @@ export function Portfolio() {
       <Container>
         <FlexWrapper direction="column">
           <MyTitle text="My recent works" />
-          <StyledList>
+          <S.List>
             <li>
-              <Link href="#all">All</Link>
+              <S.Link href="#all">All</S.Link>
             </li>
             <li>
-              <Link href="#uxdes">UX/UI Design</Link>
+              <S.Link href="#uxdes">UX/UI Design</S.Link>
             </li>
             <li>
-              <Link href="#webdes">Web Design</Link>
+              <S.Link href="#webdes">Web Design</S.Link>
             </li>
             <li>
-              <Link href="#frontend">Front End Development</Link>
+              <S.Link href="#frontend">Front End Development</S.Link>
             </li>
-          </StyledList>
+          </S.List>
           <FlexWrapper
-          wrap="wrap"
+            wrap="wrap"
             justify="center"
             gap="25px"
             padding="0 0 95px 0"
           >
-            <StyledImg src={Fitness} alt="Fitness"></StyledImg>
-            <StyledImg src={Sight} alt="Sight"></StyledImg>
-            <StyledImg src={Puma} alt="Puma"></StyledImg>
-            <StyledImg src={Yoga} alt="Yoga"></StyledImg>
+            <S.Image src={Fitness} alt="Fitness"></S.Image>
+            <S.Image src={Sight} alt="Sight"></S.Image>
+            <S.Image src={Puma} alt="Puma"></S.Image>
+            <S.Image src={Yoga} alt="Yoga"></S.Image>
           </FlexWrapper>
           <StyledButton color={myTheme.colors.white}>See more</StyledButton>
         </FlexWrapper>
@@ -46,58 +46,3 @@ export function Portfolio() {
     </section>
   );
 }
-
-const StyledList = styled.ul`
-  li {
-    margin-right: 40px;
-
-    &:last-child{
-      margin-right: 0;
-
-    }
-    @media ${myTheme.media.mobile} {
-    margin: 0;
-width: 50%;
-      text-align: center;
-    }
-  }
-
-  margin-bottom: 95px;
-
-  @media ${myTheme.media.tablet} {
-
-    margin-bottom: 40px;
-    
-  }
-
-  @media ${myTheme.media.mobile} {
-    
-  display: flex;
-  flex-wrap: wrap;
-    
-  }
-`;
-const Link = styled.a`
-  font-weight: 500;
-  font-size: calc((100vw - 360px) / (1440 - 360) * (18 - 14) + 14px);
-
-  &:hover {
-    text-decoration: underline;
-    color: ${myTheme.colors.primary};
-  }
-`;
-
-const StyledImg = styled.img`
-width: 50%;
-  max-width: 545px;
-  max-height: 350px;
-  border: solid 1px ${myTheme.colors.grey};
-  border-radius: 36px;
-
-
-  @media ${myTheme.media.tablet} {
-
-    width: 100%;
-    
-  }
-`;
