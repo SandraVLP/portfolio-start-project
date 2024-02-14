@@ -32,8 +32,7 @@ const StyledDescription = styled.div`
   border-radius: 30px;
   position: relative;
   padding: 50px;
-  margin-bottom: 80px;
-  height: 400px;
+  margin-bottom: 110px;
   display: flex;
   gap:80px;
   
@@ -41,7 +40,7 @@ const StyledDescription = styled.div`
   @media ${myTheme.media.tablet} {
     padding: 30px;
     gap:30px;
-    height: 280px;
+   margin-bottom: 80px;
   }
 
   @media ${myTheme.media.mobile} {
@@ -74,6 +73,7 @@ const StyledDescription = styled.div`
 `;
 
 const StyledImg = styled.img`
+
   max-width: 554px;
   max-height: 390px;
   position: absolute;
@@ -81,10 +81,12 @@ const StyledImg = styled.img`
   right: 50px;
   border-radius: 20px;
   width: 50%;
+  object-fit: cover;
 
   @media ${myTheme.media.tablet} {
     top: -35px;
   right: 30px;
+  max-height: 225px;
   }
 
   @media ${myTheme.media.mobile} {
@@ -96,6 +98,7 @@ const StyledImg = styled.img`
 
 const StyledTextDescription = styled.h3`
   margin: 35px 0 70px 0;
+
 
 
   @media ${myTheme.media.tablet} {
@@ -113,6 +116,7 @@ const StyledTextDescription = styled.h3`
 
 const ServiceInfo = styled.div`
   width: 40%;
+  max-width: 380px;
 
   @media ${myTheme.media.mobile} {
     width: 100%;
