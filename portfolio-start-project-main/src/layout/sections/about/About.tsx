@@ -1,13 +1,13 @@
-import styled from "styled-components";
 import FotoAbout from "../../../assets//images/foto-about.jpg";
 import { FlexWrapper } from "../../../components/FlexWrapper";
-import { myTheme } from "../../../styles/Theme";
 import { MyTitle } from "../../../components/MyTitle";
 import { Container } from "../../../components/Container";
+import { S } from "./About_styles";
+
 
 export function About() {
   return (
-    <StyledAbout id="about" className="About">
+    <S.About id="about" className="About">
       <Container>
         <FlexWrapper
           padding="140px 0 0 0"
@@ -15,9 +15,9 @@ export function About() {
           justify="center"
           gap="160px"
         >
-          <Photowrapper className="foto-container">
-            <StyledImg src={FotoAbout} alt="Foto about"></StyledImg>
-          </Photowrapper>
+          <S.Photowrapper className="foto-container">
+            <S.Image src={FotoAbout} alt="Foto about"></S.Image>
+          </S.Photowrapper>
           <FlexWrapper
             direction="column"
             justify="flex-start"
@@ -39,60 +39,6 @@ export function About() {
           </FlexWrapper>
         </FlexWrapper>
       </Container>
-    </StyledAbout>
+    </S.About>
   );
 }
-
-const StyledAbout = styled.section`
-  @media ${myTheme.media.tablet}{
-   ${FlexWrapper}:first-child {
-    gap:30px;
-    padding: 100px 0 0 0;
-   }
-
-   ${FlexWrapper}:nth-child(2) {
-    gap: 10px;
-    padding: 0;
-   }
-  }
-
-  
-
-`
-
-const StyledImg = styled.img`
-  max-width: 280px;
-  border-radius: 20px;
-
-  @media ${myTheme.media.tablet}{
-    max-width: 200px;
-  }
-
-`;
-
-const Photowrapper = styled.div`
-position: relative;
-z-index: 0;
- &::before {
-  content: "";
-  border: solid 3px ${myTheme.colors.primary};
-  width: 280px;
-  height: 420px; 
-  border-radius: 20px;
-  position: absolute;
-  bottom: -40px;
-  right: 50px;
-  z-index: -1;
-
-  @media ${myTheme.media.tablet}{
-    width: 200px;
-    height: 300px; 
-    bottom: -20px;
-  right: 30px;
-  }
-
- }
-
-
-
-`;
