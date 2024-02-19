@@ -4,8 +4,9 @@ import { myTheme } from "../../styles/Theme";
 
 const Footer = styled.footer`
   height: 25vh;
-  padding: 60px 0;
   background-color: ${myTheme.colors.secondary};
+  display: flex;
+  align-items: stretch;
 
 small {
   font-weight: 500;
