@@ -10,31 +10,49 @@ import { MyTitle } from "../../components/MyTitle";
 import { Container } from "../../components/Container";
 import { S } from "./Services_styles";
 import React from "react";
+import { ListItem } from "./ListItem";
 
 const serviceData = [
-{
-  title: "UX/UI design",
-  description: "Research, Design, Prototype, and Animation",
-  link:"/ux",
-  src: Work1,
-  alt:"Ux design"
-},
-{
-  title: "Front end development",
-  description: "Implement UX design into live and user friendly",
-  link: "/front",
-  src: Yoga,
-  alt: "Yoga"
-},
-{
-  title: "Responsive design",
-  description: "I build landing pages and responsive websites and web App",
-  link: "/resp",
-  src: Sight,
-  alt: "Sight",
-}
+  {
+    title: "UX/UI design",
+    description: "Research, Design, Prototype, and Animation",
+    link: "/ux",
+    src: Work1,
+    alt: "Ux design",
+  },
+  {
+    title: "Front end development",
+    description: "Implement UX design into live and user friendly",
+    link: "/front",
+    src: Yoga,
+    alt: "Yoga",
+  },
+  {
+    title: "Responsive design",
+    description: "I build landing pages and responsive websites and web App",
+    link: "/resp",
+    src: Sight,
+    alt: "Sight",
+  },
+];
 
-]
+const serviceList = [
+  {
+    title: "UX/UI Design",
+    src: Ux,
+    alt: "UX",
+  },
+  {
+    title: "Front End Development",
+    src: Front,
+    alt: "Front",
+  },
+  {
+    title: "Responsive Design",
+    src: Resp,
+    alt: "Resp",
+  },
+];
 export const Services: React.FC = () => {
   return (
     <S.Services id="service" className="services">
@@ -42,55 +60,28 @@ export const Services: React.FC = () => {
         <FlexWrapper direction="column">
           <MyTitle text="What I do" />
           <S.List className="service-list">
-            <div>
-              <img src={Ux} alt="UX"></img>
-              <p> UX/UI Design</p>
-            </div>
-            <div>
-              <img src={Front} alt="Front"></img>
-              <p>Front End Development</p>
-            </div>
-            <div>
-              <img src={Resp} alt="Resp"></img>
-              <p>Responsive Design</p>
-            </div>
+            {serviceList.map((item, index) => {
+              return (
+                <ListItem key={index} title={item.title} src={item.src} alt={item.alt} />
+              );
+            })}
           </S.List>
           <FlexWrapper direction="column">
-
             {serviceData.map((s, index) => {
-              return             <Service
-              key={index}
-              title={s.title}
-              description={s.description}
-              link={s.link}
-              src={s.src}
-              alt={s.alt}
-            ></Service>
+              return (
+                <Service
+                  key={index}
+                  title={s.title}
+                  description={s.description}
+                  link={s.link}
+                  src={s.src}
+                  alt={s.alt}
+                ></Service>
+              );
             })}
-            {/* <Service
-              title={"UX/UI design"}
-              description={"Research, Design, Prototype, and Animation"}
-              link="/ux"
-              src={Work1}
-              alt="Ux design"
-            ></Service>
-            <Service
-              title="Front end development"
-              description="Implement UX design into live and user friendly"
-              link="/front"
-              src={Yoga}
-              alt="Yoga"
-            ></Service>
-            <Service
-              title="Responsive design"
-              description="I build landing pages and responsive websites and web App"
-              link="/resp"
-              src={Sight}
-              alt="Sight"
-            ></Service> */}
           </FlexWrapper>
         </FlexWrapper>
       </Container>
     </S.Services>
   );
-}
+};
