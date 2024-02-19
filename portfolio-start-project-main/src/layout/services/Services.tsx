@@ -11,6 +11,30 @@ import { Container } from "../../components/Container";
 import { S } from "./Services_styles";
 import React from "react";
 
+const serviceData = [
+{
+  title: "UX/UI design",
+  description: "Research, Design, Prototype, and Animation",
+  link:"/ux",
+  src: Work1,
+  alt:"Ux design"
+},
+{
+  title: "Front end development",
+  description: "Implement UX design into live and user friendly",
+  link: "/front",
+  src: Yoga,
+  alt: "Yoga"
+},
+{
+  title: "Responsive design",
+  description: "I build landing pages and responsive websites and web App",
+  link: "/resp",
+  src: Sight,
+  alt: "Sight",
+}
+
+]
 export const Services: React.FC = () => {
   return (
     <S.Services id="service" className="services">
@@ -32,7 +56,18 @@ export const Services: React.FC = () => {
             </div>
           </S.List>
           <FlexWrapper direction="column">
-            <Service
+
+            {serviceData.map((s, index) => {
+              return             <Service
+              key={index}
+              title={s.title}
+              description={s.description}
+              link={s.link}
+              src={s.src}
+              alt={s.alt}
+            ></Service>
+            })}
+            {/* <Service
               title={"UX/UI design"}
               description={"Research, Design, Prototype, and Animation"}
               link="/ux"
@@ -52,7 +87,7 @@ export const Services: React.FC = () => {
               link="/resp"
               src={Sight}
               alt="Sight"
-            ></Service>
+            ></Service> */}
           </FlexWrapper>
         </FlexWrapper>
       </Container>
