@@ -25,7 +25,7 @@ const Menu = styled.nav`
 
 
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
-  background-color: ${myTheme.colors.secondary};
+  background-color: rgba(15,191,97,0.5);
   position: fixed;
   top: 0;
   left: 0;
