@@ -1,5 +1,3 @@
-
-
 type ListItemPropsType = {
   title?: string;
   src?: string;
