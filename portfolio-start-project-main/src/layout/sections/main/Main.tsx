@@ -5,6 +5,7 @@ import { FlexWrapper } from "../../../components/FlexWrapper";
 import { Container } from "../../../components/Container";
 import {S} from "./Main_styles"
 import React from "react";
+import Tilt from 'react-parallax-tilt';
 
 export const Main: React.FC = () => {
   return (
@@ -21,7 +22,8 @@ export const Main: React.FC = () => {
             </p>
             <StyledButton>Send Email</StyledButton>
           </S.Info>
-          <img src={MainFoto} srcSet={`${MainBigFoto} 2x`} alt="Main Foto"></img>
+          <Tilt> <img src={MainFoto} srcSet={`${MainBigFoto} 2x`} alt="Main Foto"></img></Tilt>
+         
         </FlexWrapper>
       </Container>
     </S.Main>
