@@ -14,6 +14,10 @@ const About = styled.section`
       padding: 0;
     }
   }
+
+  h2 {
+    margin-bottom: 0;
+  }
 `;
 
 const Image = styled.img`
