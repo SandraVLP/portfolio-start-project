@@ -32,6 +32,9 @@ width: 50%;
   }
 `;
 const Link = styled.a`
+border: none;
+padding: 0;
+background-color: ${myTheme.colors.white};
   font-weight: 500;
   font-size: calc((100vw - 360px) / (1440 - 360) * (18 - 14) + 14px);
 
