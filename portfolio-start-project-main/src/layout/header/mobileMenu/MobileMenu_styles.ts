@@ -38,24 +38,30 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
   transform: translateY(-100%);
   transition: 1s ease-in-out;
 
-  ${(props) =>
-    props.isOpen &&
-    css<{ isOpen: boolean }>`
-    transform: translateY(0);
-    `}
+
 
   ul {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 10px;
+    gap: 5px;
   }
 
   a {
     font-size:40px;
     font-weight: 700px;
   }
+
+  ${(props) =>
+    props.isOpen &&
+    css<{ isOpen: boolean }>`
+    transform: translateY(0);
+    & ul{
+      gap: 30px;
+      transition: 1s ease-in-out;
+    }
+    `}
 `;
 
 
