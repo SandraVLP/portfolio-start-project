@@ -25,21 +25,23 @@ const Menu = styled.nav`
 
 
 const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
-  background-color: rgba(15,191,97,0.5);
+  background-color: ${myTheme.colors.white};
   position: fixed;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
   z-index: 99999;
-  display: none;
+  display: flex;
+      justify-content: center;
+      align-items: center;
+  transform: translateY(-100%);
+  transition: 1s ease-in-out;
 
   ${(props) =>
     props.isOpen &&
     css<{ isOpen: boolean }>`
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    transform: translateY(0);
     `}
 
   ul {
@@ -47,7 +49,12 @@ const MobileMenuPopup = styled.div<{ isOpen: boolean }>`
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 30px;
+    gap: 10px;
+  }
+
+  a {
+    font-size:40px;
+    font-weight: 700px;
   }
 `;
 
