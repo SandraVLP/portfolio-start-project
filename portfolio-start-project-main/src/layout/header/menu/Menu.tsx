@@ -2,27 +2,28 @@ import styled from "styled-components";
 import { myTheme } from "../../../styles/Theme";
 import { StyledButton } from "../../../components/Button";
 import React from "react";
+import { Link } from "react-scroll";
 
 export const MenuList: React.FC = () => {
   return (
       <StyledUl>
         <li>
-          <Link href="#home">Home</Link>
+          <NavLink to="main" smooth={true} activeClass="active" spy={true}>Home</NavLink>
         </li>
         <li>
-          <Link href="#about">About</Link>
+          <NavLink to="about" smooth={true} activeClass="active" spy={true}>About</NavLink>
         </li>
         <li>
-          <Link href="#skills">Skills</Link>
+          <NavLink to="skills" smooth={true} activeClass="active" spy={true}>Skills</NavLink>
         </li>
         <li>
-          <Link href="#service">Service</Link>
+          <NavLink to="service" smooth={true} activeClass="active" spy={true}>Service</NavLink>
         </li>
         <li>
-          <Link href="#works">My work</Link>
+          <NavLink to="works" smooth={true} activeClass="active" spy={true}>My work</NavLink>
         </li>
         <li>
-          <Link href="#contacts">Contacts</Link>
+          <NavLink to="contacts" smooth={true} activeClass="active" spy={true}>Contacts</NavLink>
         </li>
         <li>
           <StyledButton as="a" href="/resume">
@@ -49,9 +50,10 @@ const StyledUl = styled.ul`
 
 `;
 
-const Link = styled.a`
+const NavLink = styled(Link)`
+cursor: pointer;
 font-size: calc((100vw - 360px) /  (1440 - 360) * (18 - 14) + 14px);
-  &:hover {
+  &:hover, &.active {
     color: ${myTheme.colors.primary};
   }
 `;
